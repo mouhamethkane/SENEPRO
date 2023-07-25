@@ -21,7 +21,7 @@
         @endif 
         <div id="entete">
         <a href="login.php" class="login">Login</a>
-        <img src="image/kane.jpg" alt="" class="video_entete">
+        <img src="public/image/kane.jpg" alt="" class="video_entete">
         <p class="nomsite">Application de recherche d'ouvrier facilement<p>
             <div id="formauto">
                 <form name="formauto" method="post" action="">
