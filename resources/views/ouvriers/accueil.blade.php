@@ -22,11 +22,10 @@
         <div class="container-fluid" id="entete">
         <a href="login.php" class="login">Login</a>
         <img src="{{asset('/image/kane.jpg')}}" alt="" class="video_entete">
-        <p class="nomsite">Application de recherche d'ouvrier facilement<p>
+        <p class="nomsite">Trouver son ouvrier facilement<p>
             <div id="formauto">
                 <form name="formauto" method="post" action="">
                 @csrf
-                <!-- @include('ouvriers.form') -->
                     <input id="motcle" type="text" name="motcle" placeholder=" Recherche par metier..." />
                     <input class="btfind" type="submit" name="btsubmit" value=" Recherche" />
 </form>
@@ -35,7 +34,37 @@
                
     </div> 
              
-        
-    </div>
+    <div class="col">
+                <div class="card">
+                  <img src="asset/image/recol5.jpg" class="card-img-top" height="300px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href=""></a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-sm-none d-md-block">
+                <div class="card">
+                  <img src="asset/image/recol8.jpg" class="card-img-top" height="300px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href=""></a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-sm-none d-md-block">
+                <div class="card">
+                  <img src="asset/image/recol10.jpg" class="card-img-top" height="300px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href=""></a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-sm-none d-md-block">
+                <div class="card">
+                  <img src="asset/image/recol1.jpg" class="card-img-top" height="300px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href=""></a></h5>
+                  </div>
+            </div>
+          </div>
 @endsection 
   
