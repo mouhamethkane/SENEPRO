@@ -19,18 +19,22 @@
                 {{ Session::get('success') }}
             </div>
         @endif 
-        <div id="entete">
+        <div class="container-fluid" id="entete">
         <a href="login.php" class="login">Login</a>
-        <img src="public/image/kane.jpg" alt="" class="video_entete">
+        <img src="{{asset('/image/kane.jpg')}}" alt="" class="video_entete">
         <p class="nomsite">Application de recherche d'ouvrier facilement<p>
             <div id="formauto">
                 <form name="formauto" method="post" action="">
                 @csrf
-                @include('students.form')
+                <!-- @include('ouvriers.form') -->
                     <input id="motcle" type="text" name="motcle" placeholder=" Recherche par metier..." />
                     <input class="btfind" type="submit" name="btsubmit" value=" Recherche" />
-            </div>
-    </div>           
+</form>
+                </div>
+
+               
+    </div> 
+             
         
     </div>
 @endsection 

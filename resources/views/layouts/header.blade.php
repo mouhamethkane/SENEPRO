@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+<nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
     <a class="navbar-brand" href="#">Gestion des ouvrier</a>
     <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation"></button>
@@ -11,10 +11,10 @@
                 <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Etudiant</a>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ouvriers</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="{{ route('students.create')}}">Nouvel ouvrier</a>
-                    <a class="dropdown-item" href="{{ route('students.index')}}">Liste des ouvriers</a>
+                    <a class="dropdown-item" href="#">Nouvel ouvrier</a>
+                    <a class="dropdown-item" href="#">Liste des ouvriers</a>
                 </div>
             </li>
         </ul>
