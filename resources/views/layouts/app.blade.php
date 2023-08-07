@@ -22,7 +22,6 @@
         </div>
     </main>
     <footer>
-        @include("layouts.footer")
     </footer>
 </body>
 </html>

@@ -6,15 +6,9 @@
     <title>MASSEYE GNING</title>
   </head>
   <body>
-   <h1>{{$mailData ['title'] }}</h1>
+   <h1>{{$mailData ['email'] }}</h1>
 
-   <p>{{$mailData ['body'] }}</p>
-
-   <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-    à titre provisoire pour calibrer une mise en page, le texte définitif venant 
-    remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. 
-    Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</p>
-
-        <p>Thank You.</p>
+   <p>{{$mailData ['subject'] }}</p>
+   <p>{{$mailData ['contenu'] }}</p>
   </body>
 </html>

@@ -15,8 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('ouvriers.accueil');
 });
 
+Route::get('/contact', function () {
+    return view('contact');
+});
 
 Route::get('send-mail',[MailController::class, 'index']);
+Route::get('/contact',[MailController::class, 'contact'])->name('contactpage');
+Route::post('/contact',[MailController::class, 'contactSend'])->name('contactsendpage');

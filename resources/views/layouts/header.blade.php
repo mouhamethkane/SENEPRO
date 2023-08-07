@@ -8,13 +8,16 @@
                 <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
             </li>
             <li class="nav-item">
+                <a class="nav-link active" href="/contact" aria-current="page">Contactez-Nous<span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Etudiant</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="{{ route('students.create')}}">Nouvel ouvrier</a>
-                    <a class="dropdown-item" href="{{ route('students.index')}}">Liste des ouvriers</a>
+                    <a class="dropdown-item" href="#">Nouvel ouvrier</a>
+                    <a class="dropdown-item" href="#">Liste des ouvriers</a>
                 </div>
             </li>
         </ul>
