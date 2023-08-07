@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>CONTACTEZ-NOUS</h1>
-    <h3 class="text-center text-dark my-4">Bienvenue sur senepro vous pouvez nous contactes maintenant</h3>
+    <h3 class="text-center text-dark my-4">Bienvenue sur le site sénépro vous pouvez nous contactes maintenant</h3>
     <hr>
     <form action="" method="POST">
         @csrf
