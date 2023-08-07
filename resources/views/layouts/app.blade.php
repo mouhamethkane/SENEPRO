@@ -20,11 +20,9 @@
             @yield("content")
         </div>
     </main>
-<<<<<<< HEAD
-   
-=======
+
     <footer>
     </footer>
->>>>>>> sendmail
+
 </body>
 </html>

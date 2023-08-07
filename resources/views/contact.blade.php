@@ -1,11 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>contact page</h1>
-    <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-    à titre provisoire pour calibrer une mise en page, le texte définitif venant 
-    remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. 
-    Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</p>
+    <h1>CONTACTEZ-NOUS</h1>
+    <h3 class="text-center text-dark my-4">Bienvenue sur senepro vous pouvez nous contactes maintenant</h3>
     <hr>
     <form action="" method="POST">
         @csrf
@@ -22,7 +19,7 @@
             <label for="Message" class="form-label">Message</label>
             <textarea name="contenu" id="message" class="form-control" placeholder="saisir votre description"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Envoyer</button>
+        <button type="submit" class="btn btn-lg btn-secondary">Envoyer</button>
     </form>
     
 @endsection

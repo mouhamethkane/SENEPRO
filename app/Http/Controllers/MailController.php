@@ -33,7 +33,6 @@ class MailController extends Controller
        $message->subject = $request->subject;
        $message->contenu = $request->contenu;
 
-        $message->save();
         
         $message = [
 
