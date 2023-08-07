@@ -4,7 +4,6 @@
 
 @section("content")
     <div class="row">
-        <h3>Enregistrement d'un ouvrier</h3>
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
