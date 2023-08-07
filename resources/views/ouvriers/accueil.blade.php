@@ -20,8 +20,10 @@
         @endif 
         <div class="container-fluid" id="entete">
         <a href="login.php" class="login">Login</a>
-        <img src="{{asset('/image/kane.jpg')}}" alt="" class="video_entete">
-        <p class="nomsite">Trouver son ouvrier facilement<p>
+
+        <img src="{{asset('image/kane.jpg')}}" alt="" class="video_entete">
+        <p class="nomsite">Application de recherche d'ouvrier facilement<p>
+
             <div id="formauto">
                 <form name="formauto" method="post" action="">
                 @csrf
