@@ -8,6 +8,9 @@
                 <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
             </li>
             <li class="nav-item">
+                <a class="nav-link active" href="/contact" aria-current="page">Contactez-Nous<span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">

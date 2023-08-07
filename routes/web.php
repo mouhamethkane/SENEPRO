@@ -1,6 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\ProfileController;
+=======
+use App\Http\Controllers\MailController;
+>>>>>>> sendmail
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +21,7 @@ Route::get('/', function () {
     return view('ouvriers.accueil');
 });
 
+<<<<<<< HEAD
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
@@ -28,3 +33,12 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+=======
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('send-mail',[MailController::class, 'index']);
+Route::get('/contact',[MailController::class, 'contact'])->name('contactpage');
+Route::post('/contact',[MailController::class, 'contactSend'])->name('contactsendpage');
+>>>>>>> sendmail
