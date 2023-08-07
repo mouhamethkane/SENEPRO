@@ -20,11 +20,8 @@
             @yield("content")
         </div>
     </main>
-<<<<<<< HEAD
-   
-=======
     <footer>
+        @include("layouts.footer")
     </footer>
->>>>>>> sendmail
 </body>
 </html>
