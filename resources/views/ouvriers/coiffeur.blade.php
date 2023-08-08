@@ -59,7 +59,7 @@
                     <img src="{{asset('/image/coiffeus.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                         <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Dakar.</p>
-                        <a href="#" class="btn btn-primary">OUMOU CISSE</a>
+                        <a href="/coiffeurprofil" class="btn btn-primary">OUMOU CISSE</a>
                     </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                     <img src="{{asset('/image/coiffeuse1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                         <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Thies</p>
-                        <a href="#" class="btn btn-primary">AMY GUEYE</a>
+                        <a href="/coiffeurprofil" class="btn btn-primary">AMY GUEYE</a>
                     </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     <img src="{{asset('/image/coiffeuse2.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Louga</p>
-                        <a href="#" class="btn btn-primary">NDAYE GUEYE</a>
+                        <a href="/coiffeurprofil" class="btn btn-primary">NDAYE GUEYE</a>
                     </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                     <img src="{{asset('/image/coiffeuse3.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Saint Louis</p>
-                        <a href="#" class="btn btn-primary">SOKHNA NDOUR</a>
+                        <a href="/coiffeurprofil" class="btn btn-primary">SOKHNA NDOUR</a>
                     </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                     <img src="{{asset('/image/coiffeuse4.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Diourbel</p>
-                        <a href="#" class="btn btn-primary">AWA NDIAYE</a>
+                        <a href="/coiffeurprofil" class="btn btn-primary">AWA NDIAYE</a>
                     </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                     <img src="{{asset('/image/coiffeus.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Fatick</p>
-                        <a href="#" class="btn btn-primary">AMY COLLE NDIAYE</a>
+                        <a href="/coiffeurprofil" class="btn btn-primary">AMY COLLE NDIAYE</a>
                     </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                     <img src="{{asset('/image/coiffeuse6.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Tambacounda</p>
-                        <a href="#" class="btn btn-primary">ANTA FALL</a>
+                        <a href="/coiffeurprofil" class="btn btn-primary">ANTA FALL</a>
                     </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                     <img src="{{asset('/image/coiffeuse1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Ziguinchor</p>
-                        <a href="#" class="btn btn-primary">NDEYE ASTOU DIOP</a>
+                        <a href="/coiffeurprofil" class="btn btn-primary">NDEYE ASTOU DIOP</a>
                     </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                     <img src="{{asset('/image/coiffeuse2.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Sedhiou</p>
-                        <a href="#" class="btn btn-primary">DIAYNABA THIAM</a>
+                        <a href="/coiffeurprofil" class="btn btn-primary">DIAYNABA THIAM</a>
                     </div>
                     </div>
                 </div>

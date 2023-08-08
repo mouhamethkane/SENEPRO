@@ -37,6 +37,14 @@ Route::get('/carreleur', function () {
     return view('ouvriers.carreleur');
 })->name('carreleur');
 
+Route::get('/coiffeurprofil', function () {
+    return view('ouvriers.coiffeurprofil');
+})->name('coiffeurprofil');
+
+Route::get('/profilcarrolleur', function () {
+    return view('ouvriers.profilcarrolleur');
+})->name('profilcarrolleur');
+
 Route::get('/chauffeur', function () {
     return view('ouvriers.chauffeur');
 })->name('chauffeur');

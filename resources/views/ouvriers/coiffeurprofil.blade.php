@@ -55,7 +55,7 @@
                     <div class="card-body">
                     <img src="{{asset('/image/coif1.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
                         <h5 class="card-title">Tresse</h5>
-                        <a href="#" class=""></a>
+                        <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                     <div class="card-body">
                     <img src="{{asset('/image/coif2.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
                         <h5 class="card-title">Ekay</h5>
-                        <a href="#" class=""></a>
+                        <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                     <div class="card-body">
                     <img src="{{asset('/image/coif3.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
                     <h5 class="card-title">Chignon</h5>
-                        <a href="#" class=""></a>
+                        <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                     <div class="card-body">
                     <img src="{{asset('/image/coif4.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
                     <h5 class="card-title">Life</h5>
-                        <a href="#" class=""></a>
+                        <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                     <div class="card-body">
                     <img src="{{asset('/image/coif5.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
                     <h5 class="card-title">Petit tete</h5>
-                        <a href="#" class=""></a>
+                        <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                     <div class="card-body">
                     <img src="{{asset('/image/coif6.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
                     <h5 class="card-title">Torsate</h5>
-                        <a href="#" class=""></a>
+                        <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>
                 </div>
