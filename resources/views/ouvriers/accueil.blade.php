@@ -70,7 +70,7 @@
                 <div class="card md-15">
                   <img src="{{asset('/image/electricien.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">Electricien</a></h5>
+                    <h5 class="card-title"><a href="/electricien">Electricien</a></h5>
                   </div>
             </div>
           </div>
@@ -87,7 +87,7 @@
                 <div class="card">
                   <img src="{{asset('/image/maquilleuse.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">Maquilleuse</a></h5>
+                    <h5 class="card-title"><a href="/maquilleuse">Maquilleuse</a></h5>
                   </div>
                 </div>
               </div>
@@ -95,7 +95,7 @@
                 <div class="card">
                   <img src="{{asset('/image/mecanicien.png')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">Mecanicien</a></h5>
+                    <h5 class="card-title"><a href="/mecanicien">Mecanicien</a></h5>
                   </div>
                 </div>
               </div>
@@ -103,7 +103,7 @@
                 <div class="card">
                   <img src="{{asset('/image/platrier.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">Platrier</a></h5>
+                    <h5 class="card-title"><a href="/platrier">Platrier</a></h5>
                   </div>
                 </div>
               </div>

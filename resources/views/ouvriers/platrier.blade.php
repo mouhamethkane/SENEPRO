@@ -23,7 +23,7 @@
             <h3>
                 <div class="row">
                     <div class="col bg-white rounded-circle text-dark">
-                        <center>vous etes dans la categorie des decorateurs</center><br>
+                        <center>vous etes dans la categorie des platrier</center><br>
 
                     </div>
                 </div>
@@ -34,11 +34,11 @@
                     ratione totam omnis quo earum in, nobis amet, minus soluta consequuntur voluptates?</p>
             </div>
                     <div class="col-3">
-                        <center><img src="{{asset('/image/decore.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"></center>
+                        <center><img src="{{asset('/image/list.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"></center>
 
                     </div>
                     <div class="col-3">
-                        <center><img src="{{asset('/image/decore1.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"></center>
+                        <center><img src="{{asset('/image/electricien.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"></center>
 
                     </div>
             </div>
@@ -48,27 +48,17 @@
         </div><br><br>
         <div class="container bg-dark text-white rounded-pill">
             <h1>
-                <center><strong>Voici la liste des decorateur disponiblesa dans les differentes region</strong> </center>
+                <center><strong>Voici la liste des platriers disponiblesa dans les differentes region</strong> </center>
             </h1>
-        </div>
+            </div>
             <div class="container bg-white">
                 <div class="row">
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/SENE/coiffeur.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/electricien1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                         <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Dakar.</p>
-                        <a href="#" class="btn btn-primary">OUMOU CISSE</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/mecanicien.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
-                        <h5 class="card-title">Information</h5>
-                        <p class="card-text">Region De Thies</p>
                         <a href="#" class="btn btn-primary">MOUHAMETH KANE</a>
                     </div>
                     </div>
@@ -76,7 +66,17 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/SENE/carreleur.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/electricien2.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                        <h5 class="card-title">Information</h5>
+                        <p class="card-text">Region De Thies</p>
+                        <a href="#" class="btn btn-primary">PAPA ABDOU BITEYE</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-4">
+                    <div class="card">
+                    <div class="card-body">
+                    <img src="{{asset('/image/electricien3.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Louga</p>
                         <a href="#" class="btn btn-primary">MASSEYE GNING</a>
@@ -90,30 +90,30 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/SENE/decorateur.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/electricien4.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Saint Louis</p>
-                        <a href="#" class="btn btn-primary">SOKHNA NDOUR</a>
+                        <a href="#" class="btn btn-primary">SERIGNE SALIOU FALL</a>
                     </div>
                     </div>
                 </div>
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/SENE/maquilleuse.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/electricien5.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Diourbel</p>
-                        <a href="#" class="btn btn-primary">AWA NDIAYE</a>
+                        <a href="#" class="btn btn-primary">MOUHAMETH KANE</a>
                     </div>
                     </div>
                 </div>
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/SENE/electricien.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/electricien6.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Fatick</p>
-                        <a href="#" class="btn btn-primary">SERIGNE SALIOU FALL</a>
+                        <a href="#" class="btn btn-primary">PAPA ABDOU BITEYE</a>
                     </div>
                     </div>
                 </div>
@@ -124,34 +124,34 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/SENE/macon.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/electricien7.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Tambacounda</p>
-                        <a href="#" class="btn btn-primary">PAPA ABDOU BITEY</a>
+                        <a href="#" class="btn btn-primary">SERIGNE SALIOU FALL</a>
                     </div>
                     </div>
                 </div>
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/SENE/platrier.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/electricien8.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Ziguinchor</p>
-                        <a href="#" class="btn btn-primary">MALANG MANE</a>
+                        <a href="#" class="btn btn-primary">MASSEYE GNING</a>
                     </div>
                     </div>
                 </div>
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/SENE/plombier.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/electricien1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Sedhiou</p>
-                        <a href="#" class="btn btn-primary">IBRAHIMA MBAYE</a>
+                        <a href="#" class="btn btn-primary">PAPA ABDOU BITEYE</a>
                     </div>
                     </div>
                 </div>
-                </div>                
+                </div>               
     
 @endsection 
   

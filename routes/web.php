@@ -49,6 +49,22 @@ Route::get('/decorateur', function () {
     return view('ouvriers.decorateur');
 })->name('decorateur');
 
+Route::get('/electricien', function () {
+    return view('ouvriers.electricien');
+})->name('electricien');
+
+Route::get('/maquilleuse', function () {
+    return view('ouvriers.maquilleuse');
+})->name('maquilleuse');
+
+Route::get('/mecanicien', function () {
+    return view('ouvriers.mecanicien');
+})->name('mecanicien');
+
+Route::get('/platrier', function () {
+    return view('ouvriers.platrier');
+})->name('platrier');
+
 Route::get('/dashboard', function(){
     return view('dashboard');
 })->name('dashboard');
