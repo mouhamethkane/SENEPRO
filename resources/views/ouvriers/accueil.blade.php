@@ -78,7 +78,7 @@
                 <div class="card md-15">
                   <img src="{{asset('/image/macon.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">Macon</a></h5>
+                    <h5 class="card-title"><a href="/macon">Macon</a></h5>
                   </div>
             </div>
           </div>
