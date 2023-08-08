@@ -29,6 +29,9 @@ Route::get('/accueil', function () {
 Route::get('/macon', function () {
     return view('ouvriers.macon');
 })->name('macon');
+Route::get('/profil', function () {
+    return view('ouvriers.profil');
+})->name('profil');
 
 Route::get('/dashboard', function(){
     return view('dashboard');

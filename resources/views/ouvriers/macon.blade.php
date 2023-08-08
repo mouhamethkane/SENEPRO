@@ -59,7 +59,7 @@
                     <img src="{{asset('/image/macon1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                         <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Dakar.</p>
-                        <a href="#" class="btn btn-primary">MOUHAMETH KANE</a>
+                        <a href="/profil" class="btn btn-primary">MOUHAMETH KANE</a>
                     </div>
                     </div>
                 </div>
