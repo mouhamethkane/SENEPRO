@@ -109,5 +109,8 @@
                     </div>
                 </div>
                 </div> 
+            <div class="container">
+            <h1 class="text-center text-dark">Mettez vos commentaire<h1>
+            </div>
 @endsection 
   
