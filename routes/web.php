@@ -33,6 +33,22 @@ Route::get('/profil', function () {
     return view('ouvriers.profil');
 })->name('profil');
 
+Route::get('/carreleur', function () {
+    return view('ouvriers.carreleur');
+})->name('carreleur');
+
+Route::get('/chauffeur', function () {
+    return view('ouvriers.chauffeur');
+})->name('chauffeur');
+
+Route::get('/coiffeur', function () {
+    return view('ouvriers.coiffeur');
+})->name('coiffeur');
+
+Route::get('/decorateur', function () {
+    return view('ouvriers.decorateur');
+})->name('decorateur');
+
 Route::get('/dashboard', function(){
     return view('dashboard');
 })->name('dashboard');
