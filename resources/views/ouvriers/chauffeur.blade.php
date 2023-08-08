@@ -23,7 +23,7 @@
             <h3>
                 <div class="row">
                     <div class="col bg-white rounded-circle text-dark">
-                        <center>vous etes dans la categorie des maçon</center><br>
+                        <center>vous etes dans la categorie des chauffeurs</center><br>
 
                     </div>
                 </div>
@@ -34,11 +34,11 @@
                     ratione totam omnis quo earum in, nobis amet, minus soluta consequuntur voluptates?</p>
             </div>
                     <div class="col-3">
-                        <center><img src="{{asset('/image/maçon-africain-travaillant-avec-la-spatule-et-la-brique-97065923.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"></center>
+                        <center><img src="{{asset('/image/voiture1.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"></center>
 
                     </div>
                     <div class="col-3">
-                        <center><img src="{{asset('/image/macon.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"></center>
+                        <center><img src="{{asset('/image/voiture2.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"></center>
 
                     </div>
             </div>
@@ -48,7 +48,7 @@
         </div><br><br>
         <div class="container bg-dark text-white rounded-pill">
             <h1>
-                <center><strong>Voici la liste des macon disponiblesa dans les differentes region</strong> </center>
+                <center><strong>Voici la liste des chauffeurs disponiblesa dans les differentes region</strong> </center>
             </h1>
         </div>
             <div class="container bg-white">
@@ -56,7 +56,7 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/macon1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/chauffeur2.webp')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                         <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Dakar.</p>
                         <a href="#" class="btn btn-primary">MOUHAMETH KANE</a>
@@ -66,7 +66,7 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/macon2.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/chauffeur9.webp')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                         <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Thies</p>
                         <a href="#" class="btn btn-primary">PAPA ABDOU BITEYE</a>
@@ -76,7 +76,7 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/macon3.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/chauffeur1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Louga</p>
                         <a href="#" class="btn btn-primary">MASSEYE GNING</a>
@@ -90,7 +90,7 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/macon4.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/chauffeur3.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Saint Louis</p>
                         <a href="#" class="btn btn-primary">SERIGNE SALIOU FALL</a>
@@ -100,7 +100,7 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/macon5.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/chauffeur4.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Diourbel</p>
                         <a href="#" class="btn btn-primary">MOUHAMETH KANE</a>
@@ -110,7 +110,7 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/macon1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/chauffeur5.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Fatick</p>
                         <a href="#" class="btn btn-primary">PAPA ABDOU BITEYE</a>
@@ -124,7 +124,7 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/macon1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/chauffeur6.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Tambacounda</p>
                         <a href="#" class="btn btn-primary">SERIGNE SALIOU FALL</a>
@@ -134,7 +134,7 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/macon2.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/chauffeur7.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Ziguinchor</p>
                         <a href="#" class="btn btn-primary">MASSEYE GNING</a>
@@ -144,7 +144,7 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/macon3.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <img src="{{asset('/image/chauffeur8.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Sedhiou</p>
                         <a href="#" class="btn btn-primary">PAPA ABDOU BITEYE</a>

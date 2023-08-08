@@ -30,6 +30,18 @@ Route::get('/macon', function () {
     return view('ouvriers.macon');
 })->name('macon');
 
+Route::get('/carreleur', function () {
+    return view('ouvriers.carreleur');
+})->name('carreleur');
+
+Route::get('/chauffeur', function () {
+    return view('ouvriers.chauffeur');
+})->name('chauffeur');
+
+Route::get('/coiffeur', function () {
+    return view('ouvriers.coiffeur');
+})->name('coiffeur');
+
 Route::get('/dashboard', function(){
     return view('dashboard');
 })->name('dashboard');

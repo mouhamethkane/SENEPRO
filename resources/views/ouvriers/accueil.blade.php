@@ -38,7 +38,7 @@
                 <div class="card md-15">
                   <img src="{{asset('/image/carreleur.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a class="text-center" href="">Carreleur</a></h5>
+                    <h5 class="card-title"><a class="text-center" href="/carreleur">Carreleur</a></h5>
                   </div>
                 </div>
               </div>
@@ -46,7 +46,7 @@
                 <div class="card md-15" >
                   <img src="{{asset('/image/chauffeur.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a class="text-center" class="text-center" href="">Chauffeur</a></h5>
+                    <h5 class="card-title"><a class="text-center" class="text-center" href="/chauffeur">Chauffeur</a></h5>
                   </div>
                 </div>
               </div>
@@ -54,7 +54,7 @@
                 <div class="card md-15">
                   <img src="{{asset('/image/coiffeur.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a class="text-center" href="">Coiffeur</a></h5>
+                    <h5 class="card-title"><a class="text-center" href="/coiffeur">Coiffeur</a></h5>
                   </div>
                 </div>
               </div>
