@@ -42,6 +42,10 @@ Route::get('/coiffeur', function () {
     return view('ouvriers.coiffeur');
 })->name('coiffeur');
 
+Route::get('/decorateur', function () {
+    return view('ouvriers.decorateur');
+})->name('decorateur');
+
 Route::get('/dashboard', function(){
     return view('dashboard');
 })->name('dashboard');

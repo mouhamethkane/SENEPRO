@@ -62,7 +62,7 @@
                 <div class="card md-15">
                   <img src="{{asset('/image/decorateur.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">Decorateur</a></h5>
+                    <h5 class="card-title"><a href="/decorateur">Decorateur</a></h5>
                   </div>
             </div>
           </div>
