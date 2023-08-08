@@ -22,6 +22,10 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+Route::get('/accueil', function () {
+    return view('ouvriers.accueil');
+})->name('accueil');
+
 Route::get('/macon', function () {
     return view('ouvriers.macon');
 })->name('macon');

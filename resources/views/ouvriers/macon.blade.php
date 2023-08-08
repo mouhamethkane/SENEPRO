@@ -48,107 +48,110 @@
         </div><br><br>
         <div class="container bg-dark text-white rounded-pill">
             <h1>
-                <center><strong>Voici la liste des macon disponiblesa pikine</strong> </center>
+                <center><strong>Voici la liste des macon disponiblesa dans les differentes region</strong> </center>
             </h1>
         </div>
-        <div class="container bg-white">
-            <div class="row">
-                <div class="col-4 ">
-                    <img src="{{asset('/image/macon1.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                  <a href="profilemacon.html"><button class="btn-sm border-primary bg-secondary text-white text-center w-50">OUSMANE DIOP</button></a>  
+            <div class="container bg-white">
+                <div class="row">
+                <div class="col-sm-4 my-4">
+                    <div class="card">
+                    <div class="card-body">
+                    <img src="{{asset('/image/macon1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                        <h5 class="card-title">Information</h5>
+                        <p class="card-text">Region De Dakar.</p>
+                        <a href="#" class="btn btn-primary">MOUHAMETH KANE</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon2.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">MODOU FALL</p>
+                <div class="col-sm-4 my-4">
+                    <div class="card">
+                    <div class="card-body">
+                    <img src="{{asset('/image/macon2.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                        <h5 class="card-title">Information</h5>
+                        <p class="card-text">Region De Thies</p>
+                        <a href="#" class="btn btn-primary">PAPA ABDOU BITEYE</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon3.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">ASSANE NDOUR</p>
+                <div class="col-sm-4 my-4">
+                    <div class="card">
+                    <div class="card-body">
+                    <img src="{{asset('/image/macon3.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <h5 class="card-title">Information</h5>
+                        <p class="card-text">Region De Louga</p>
+                        <a href="#" class="btn btn-primary">MASSEYE GNING</a>
+                    </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <img src="{{asset('/image/macon4.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">ABDOU SECK</p>
                 </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon5.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">LAHAT THIOUNE</p>
+    <!-- ***********************************************************************************      -->
+    <div class="container bg-white">
+                <div class="row">
+                <div class="col-sm-4 my-4">
+                    <div class="card">
+                    <div class="card-body">
+                    <img src="{{asset('/image/macon4.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <h5 class="card-title">Information</h5>
+                        <p class="card-text">Region De Saint Louis</p>
+                        <a href="#" class="btn btn-primary">SERIGNE SALIOU FALL</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon1.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">MOUSTAPHA MBAYE</p>
+                <div class="col-sm-4 my-4">
+                    <div class="card">
+                    <div class="card-body">
+                    <img src="{{asset('/image/macon5.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <h5 class="card-title">Information</h5>
+                        <p class="card-text">Region De Diourbel</p>
+                        <a href="#" class="btn btn-primary">MOUHAMETH KANE</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon2.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">MEDOUNE FALL</p>
+                <div class="col-sm-4 my-4">
+                    <div class="card">
+                    <div class="card-body">
+                    <img src="{{asset('/image/macon1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <h5 class="card-title">Information</h5>
+                        <p class="card-text">Region De Fatick</p>
+                        <a href="#" class="btn btn-primary">PAPA ABDOU BITEYE</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon3.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">MODOU DIOP</p>
                 </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon4.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">ASSANE KA</p>
+<!-- ***********************************************************************************      -->
+<div class="container bg-white">
+                <div class="row">
+                <div class="col-sm-4 my-4">
+                    <div class="card">
+                    <div class="card-body">
+                    <img src="{{asset('/image/macon4.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <h5 class="card-title">Information</h5>
+                        <p class="card-text">Region De Tambacounda</p>
+                        <a href="#" class="btn btn-primary">SERIGNE SALIOU FALL</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon5.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">GORA DIOUF</p>
+                <div class="col-sm-4 my-4">
+                    <div class="card">
+                    <div class="card-body">
+                    <img src="{{asset('/image/macon5.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <h5 class="card-title">Information</h5>
+                        <p class="card-text">Region De Ziguinchor</p>
+                        <a href="#" class="btn btn-primary">MASSEYE GNING</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon1.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">MOUSSA FAYE</p>
+                <div class="col-sm-4 my-4">
+                    <div class="card">
+                    <div class="card-body">
+                    <img src="{{asset('/image/macon1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
+                    <h5 class="card-title">Information</h5>
+                        <p class="card-text">Region De Sedhiou</p>
+                        <a href="#" class="btn btn-primary">PAPA ABDOU BITEYE</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon2.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">CHEIKH NIANG</p>
-                </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon3.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">NGAGNE MBAYE</p>
-                </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon4.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">CHEIKH GAYE</p>
-                </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon5.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">MAME MBAYE</p>
-                </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon1.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">OMAR THIAM</p>
-                </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon2.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">NDIOGOU MBAYE</p>
-                </div>
-                <div class="col-4">
-                    <img src="{{asset('/image/macon3.jpg')}}" class="rounded-circle bg-dark" width="200" height="200"
-                        alt="mass"><br><br>
-                    <p class="border-primary bg-secondary text-white text-center w-50">KHADIM MBENGUE</p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
+                </div>                
+    
 @endsection 
   
