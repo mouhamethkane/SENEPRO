@@ -111,7 +111,7 @@
                 <div class="card">
                   <img src="{{asset('/image/plombier.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">Plombier</a></h5>
+                    <h5 class="card-title"><a href="/plombier">Plombier</a></h5>
                   </div>
             </div>
           </div>
@@ -119,7 +119,7 @@
                 <div class="card">
                   <img src="{{asset('/image/tapissier.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a class="text-center" href="">Tapissier</a></h5>
+                    <h5 class="card-title"><a class="text-center" href="/tapissier">Tapissier</a></h5>
                   </div>
             </div>
           </div>
@@ -127,7 +127,7 @@
                 <div class="card">
                   <img src="{{asset('/image/traiteur.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a class="text-center" href="">Traiteur</a></h5>
+                    <h5 class="card-title"><a class="text-center" href="/traiteur">Traiteur</a></h5>
                   </div>
             </div>
           </div>
@@ -137,7 +137,7 @@
                 <div class="card">
                   <img src="{{asset('/image/tailleur.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">Tailleur</a></h5>
+                    <h5 class="card-title"><a href="/tailleur">Tailleur</a></h5>
                   </div>
                 </div>
               </div>
@@ -145,15 +145,15 @@
                 <div class="card">
                   <img src="{{asset('/image/cuisier.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">Chef_Cuisine</a></h5>
+                    <h5 class="card-title"><a href="/cuisier">Chef_Cuisine</a></h5>
                   </div>
                 </div>
               </div>
               <div class="col d-sm-none d-md-block" id="image">
                 <div class="card">
-                  <img src="{{asset('/image/platrier.jpg')}}" class="card-img-top" height="100px" alt="...">
+                  <img src="{{asset('/image/culte.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">Platrier</a></h5>
+                    <h5 class="card-title"><a href="/culte">Agriculteur</a></h5>
                   </div>
                 </div>
               </div>
@@ -161,7 +161,7 @@
                 <div class="card">
                   <img src="{{asset('/image/peintre.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="">Peintre</a></h5>
+                    <h5 class="card-title"><a href="/peintre">Peintre</a></h5>
                   </div>
             </div>
           </div>
@@ -169,7 +169,7 @@
                 <div class="card">
                   <img src="{{asset('/image/coiffureh.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a class="text-center" href="">coiffureh</a></h5>
+                    <h5 class="card-title"><a class="text-center" href="coiffureh">coiffureh</a></h5>
                   </div>
             </div>
           </div>
@@ -177,7 +177,7 @@
                 <div class="card">
                   <img src="{{asset('/image/menuisier.jpg')}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title"><a class="text-center" href="">Menuisier</a></h5>
+                    <h5 class="card-title"><a class="text-center" href="/menuisier">Menuisier</a></h5>
                   </div>
             </div>
           </div>

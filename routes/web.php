@@ -73,6 +73,42 @@ Route::get('/platrier', function () {
     return view('ouvriers.platrier');
 })->name('platrier');
 
+Route::get('/plombier', function () {
+    return view('ouvriers.plombier');
+})->name('plombier');
+
+Route::get('/tapissier', function () {
+    return view('ouvriers.tapissier');
+})->name('tapissier');
+
+Route::get('/traiteur', function () {
+    return view('ouvriers.traiteur');
+})->name('traiteur');
+
+Route::get('/tailleur', function () {
+    return view('ouvriers.tailleur');
+})->name('tailleur');
+
+Route::get('/cuisier', function () {
+    return view('ouvriers.cuisier');
+})->name('cuisier');
+
+Route::get('/peintre', function () {
+    return view('ouvriers.peintre');
+})->name('peintre');
+
+Route::get('/coiffureh', function () {
+    return view('ouvriers.coiffureh');
+})->name('coiffureh');
+
+Route::get('/menuisier', function () {
+    return view('ouvriers.menuisier');
+})->name('menuisier');
+
+Route::get('/culte', function () {
+    return view('ouvriers.culte');
+})->name('culte');
+
 Route::get('/dashboard', function(){
     return view('dashboard');
 })->name('dashboard');
