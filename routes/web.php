@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/layouts.Crud.index', function () {
+    return view('layouts.Crud.index');
+});
+
+Route::get('/layouts.Crud.ajouter', function () {
+    return view('layouts.Crud.ajouter');
+});
+
+
 Route::get('/', function () {
     return view('ouvriers.accueil');
 });
@@ -85,6 +94,7 @@ Route::middleware('auth')->group(function(){
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profole.edit');
     Route::get('/profile', [ProfileController::class, 'update'])->name('profole.update');
     Route::get('/profile', [ProfileController::class, 'destroy'])->name('profole.destroy');
+
 });
 
 
