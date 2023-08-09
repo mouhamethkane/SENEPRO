@@ -41,6 +41,10 @@ Route::get('/coiffeurprofil', function () {
     return view('ouvriers.coiffeurprofil');
 })->name('coiffeurprofil');
 
+Route::get('/decorprofil', function () {
+    return view('ouvriers.decorprofil');
+})->name('decorprofil');
+
 Route::get('/profilcarrolleur', function () {
     return view('ouvriers.profilcarrolleur');
 })->name('profilcarrolleur');
