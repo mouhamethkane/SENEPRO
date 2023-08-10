@@ -110,7 +110,33 @@
                 </div>
                 </div> 
             <div class="container">
+                <hr>
+                <h1 class="text-center">Les commentaires</h1>
+                <hr>
+                <h5>nom complets</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ratione cum dicta, vitae sit architecto distinctio veniam illo error deleniti a eos enim quidem modi ipsa ullam est magnam delectus!</p>
+                <h6>date et heure</h6>
+                <hr>
+                <hr>
+                <h5>Mouhamed Kane</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ratione cum dicta, vitae sit architecto distinctio veniam illo error deleniti a eos enim quidem modi ipsa ullam est magnam delectus!</p>
+                <h6>07/10/2023 à 11h:30mn</h6>
+                <hr>
+                <hr>
+                <h5>Oumou Cisse</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ratione cum dicta, vitae sit architecto distinctio veniam illo error deleniti a eos enim quidem modi ipsa ullam est magnam delectus!</p>
+                <h6>09/11/2023 à 01h:45mn</h6>
+                <hr>
             <h1 class="text-center text-dark">Mettez vos commentaire<h1>
+            <hr>
+                <form action="" method="POST">
+                    @csrf
+                    <div class="form-group">
+                        <label class="for-content">Votre commentaire</label>
+                        <textarea  class="from-control border-secondary" name="content" id="content" cols="70" rows="3"></textarea>
+                        <button type="submit" class="btn btn-lg btn-secondary border-secondary mt-3">Soumettre mon commentaire</button>
+                    </div>
+                </form>
             </div>
 @endsection 
   
