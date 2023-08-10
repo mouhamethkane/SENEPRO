@@ -112,21 +112,28 @@
             <div class="container">
                 <hr>
                 <h1 class="text-center">Les commentaires</h1>
-                <hr>
+                <hr class="col-sm-5">
                 <h5>nom complets</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ratione cum dicta, vitae sit architecto distinctio veniam illo error deleniti a eos enim quidem modi ipsa ullam est magnam delectus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                    Corrupti ratione cum dicta, vitae sit architecto distinctio<br> 
+                    veniam illo error deleniti a eos enim quidem modi ipsa ullam<br> 
+                    est magnam delectus!</p>
                 <h6>date et heure</h6>
-                <hr>
-                <hr>
-                <h5>Mouhamed Kane</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ratione cum dicta, vitae sit architecto distinctio veniam illo error deleniti a eos enim quidem modi ipsa ullam est magnam delectus!</p>
-                <h6>07/10/2023 à 11h:30mn</h6>
-                <hr>
-                <hr>
-                <h5>Oumou Cisse</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ratione cum dicta, vitae sit architecto distinctio veniam illo error deleniti a eos enim quidem modi ipsa ullam est magnam delectus!</p>
-                <h6>09/11/2023 à 01h:45mn</h6>
-                <hr>
+                <hr class="col-sm-5">
+                <h5>Mouhameth Kane</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                    Corrupti ratione cum dicta, vitae sit architecto distinctio<br> 
+                    veniam illo error deleniti a eos enim quidem modi ipsa ullam<br> 
+                    est magnam delectus!</p>
+                <h6>08/06/2023 à 11h:30mn</h6>
+                <hr class="col-sm-5">
+                <h5>Oumou Cissé</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                    Corrupti ratione cum dicta, vitae sit architecto distinctio<br> 
+                    veniam illo error deleniti a eos enim quidem modi ipsa ullam<br> 
+                    est magnam delectus!</p>
+                <h6>12/12/2023 à 02h:50mn</h6>
+                <hr class="col-sm-5">
             <h1 class="text-center text-dark">Mettez vos commentaire<h1>
             <hr>
                 <form action="" method="POST">
