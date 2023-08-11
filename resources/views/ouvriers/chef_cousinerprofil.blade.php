@@ -23,8 +23,8 @@
             <h3>
                 <div class="row">
                     <div class="col bg-white rounded-circle text-dark">
-                        <center>IBRAHIMA MBAYE</center>
-                        <h5 class="text-center">ELECTRICIEN</h5>
+                        <center>NDEYE GUEYE</center>
+                        <h5 class="text-center">CUISINIER</h5>
                         <h5 class="text-center">TELEPHONE:+221 77 876 54 32</h5>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                     ratione totam omnis quo earum in, nobis amet, minus soluta consequuntur voluptates?</p>
             </div>
                     <div class="col-6">
-                        <center><img src="{{asset('/image/electricien7.jpg')}}" class="rounded-circle bg-dark" width="60%" height="90%"></center>
+                        <center><img src="{{asset('/image/cu0.jpg')}}" class="rounded-circle bg-dark" width="50%" height="90%"></center>
 
                     </div>
             </div>
@@ -45,7 +45,7 @@
         </div><br><br>
         <div class="container bg-dark text-white rounded-pill">
             <h1>
-                <center><strong>Voici les realisations de Ibrahima Mbaye</strong> </center>
+                <center><strong>Voici les realisations de Ndeye Gueye</strong> </center>
             </h1>
         </div>
             <div class="container bg-white">
@@ -53,8 +53,8 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/e1.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                        <h5 class="card-title">repartions</h5>
+                    <img src="{{asset('/image/cu2.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
+                        <h5 class="card-title">Yassa</h5>
                         <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>
@@ -62,8 +62,8 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/e2.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                        <h5 class="card-title">repartions</h5>
+                    <img src="{{asset('/image/cu3.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
+                        <h5 class="card-title">Domoda</h5>
                         <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>
@@ -71,8 +71,8 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/e5.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                    <h5 class="card-title">repartions</h5>
+                    <img src="{{asset('/image/cu4.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
+                    <h5 class="card-title">Maffé</h5>
                         <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>
@@ -84,8 +84,8 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/e6.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                    <h5 class="card-title">repartions</h5>
+                    <img src="{{asset('/image/cu5.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
+                    <h5 class="card-title">Soupou kandia</h5>
                         <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>
@@ -93,8 +93,8 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/e7.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                    <h5 class="card-title">repartions</h5>
+                    <img src="{{asset('/image/cu6.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
+                    <h5 class="card-title">Thiébou djiene</h5>
                         <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>
@@ -102,8 +102,8 @@
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/e8.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                    <h5 class="card-title">repartions</h5>
+                    <img src="{{asset('/image/cu7.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
+                    <h5 class="card-title">Thiébou yapp</h5>
                         <a href="/coiffeurprofil" class=""></a>
                     </div>
                     </div>

@@ -85,6 +85,31 @@ Route::get('/tapissier', function () {
     return view('ouvriers.tapissier');
 })->name('tapissier');
 
+Route::get('/profilculte', function () {
+    return view('ouvriers.profilculte');
+})->name('profilculte');
+
+Route::get('/coifprofil', function () {
+    return view('ouvriers.coifprofil');
+})->name('coifprofil');
+
+Route::get('/meuniprofil', function () {
+    return view('ouvriers.meuniprofil');
+})->name('meuniprofil');
+
+
+Route::get('/profiltraiteur', function () {
+    return view('ouvriers.profiltraiteur');
+})->name('profiltraiteur');
+
+Route::get('/tailleurprofil', function () {
+    return view('ouvriers.tailleurprofil');
+})->name('tailleurprofil');
+
+Route::get('/chef_cousinerprofil', function () {
+    return view('ouvriers.chef_cousinerprofil');
+})->name('chef_cousinerprofil');
+
 Route::get('/electricienprofil', function () {
     return view('ouvriers.electricienprofil');
 })->name('electricien');

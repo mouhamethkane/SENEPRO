@@ -59,7 +59,7 @@
                     <img src="{{asset('/image/menu.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                         <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Dakar.</p>
-                        <a href="#" class="btn btn-primary">OUMOU CISSE</a>
+                        <a href="/meuniprofil" class="btn btn-primary">OUMOU CISSE</a>
                     </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                     <img src="{{asset('/image/menu1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                         <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Thies</p>
-                        <a href="#" class="btn btn-primary">MOUHAMETH KANE</a>
+                        <a href="/meuniprofil" class="btn btn-primary">MOUHAMETH KANE</a>
                     </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     <img src="{{asset('/image/menu2.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Louga</p>
-                        <a href="#" class="btn btn-primary">MASSEYE GNING</a>
+                        <a href="/meuniprofil" class="btn btn-primary">MASSEYE GNING</a>
                     </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                     <img src="{{asset('/image/menu3.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Saint Louis</p>
-                        <a href="#" class="btn btn-primary">SOKHNA NDOUR</a>
+                        <a href="/meuniprofil" class="btn btn-primary">SOKHNA NDOUR</a>
                     </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                     <img src="{{asset('/image/menu4.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Diourbel</p>
-                        <a href="#" class="btn btn-primary">AWA NDIAYE</a>
+                        <a href="/meuniprofil" class="btn btn-primary">AWA NDIAYE</a>
                     </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                     <img src="{{asset('/image/menu5.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Fatick</p>
-                        <a href="#" class="btn btn-primary">SERIGNE SALIOU FALL</a>
+                        <a href="/meuniprofil" class="btn btn-primary">SERIGNE SALIOU FALL</a>
                     </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                     <img src="{{asset('/image/menu6.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Tambacounda</p>
-                        <a href="#" class="btn btn-primary">PAPA ABDOU BITEY</a>
+                        <a href="/meuniprofil" class="btn btn-primary">PAPA ABDOU BITEY</a>
                     </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                     <img src="{{asset('/image/menu7.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Ziguinchor</p>
-                        <a href="#" class="btn btn-primary">MALANG MANE</a>
+                        <a href="/meuniprofil" class="btn btn-primary">MALANG MANE</a>
                     </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                     <img src="{{asset('/image/menu8.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
                     <h5 class="card-title">Information</h5>
                         <p class="card-text">Region De Sedhiou</p>
-                        <a href="#" class="btn btn-primary">IBRAHIMA MBAYE</a>
+                        <a href="/meuniprofil" class="btn btn-primary">IBRAHIMA MBAYE</a>
                     </div>
                     </div>
                 </div>
