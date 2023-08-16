@@ -15,7 +15,10 @@ class ArticleController extends Controller
      */
     public function index()
     {
-       return view('/article');
+        $article = Article::all();
+       return view('/article', [
+        'article' => $article
+       ]);
     }
     public function consulte()
     {
@@ -50,6 +53,7 @@ class ArticleController extends Controller
         $article->contenu = $request->contenu;
         $article->categorie = $request->categorie;
         $article->save();
+        return redirect()->route('accueil');
         
         return redirect('/article')->with('status', 'Votre article à été bien enregistré.');
     }
@@ -80,6 +84,12 @@ class ArticleController extends Controller
         $article->update();
 
         return redirect('/article')->with('status', 'Votre article à été bien modifié.');
+    }
+
+    public function accueil()
+    {
+        $article = Article::all();
+        return view('ouvriers.accueil',compact('article'));
     }
 
     /**

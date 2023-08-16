@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', function () {
-    return view('ouvriers.accueil');
-});
+// Route::get('/', function () {
+//     return view('ouvriers.accueil');
+// });
 
 Route::get('/contact', function () {
     return view('contact');
@@ -191,4 +191,5 @@ Route::get('/consulte', [ArticleController::class, 'consulte'])->name('consulte'
 Route::post('/article', [ArticleController::class, 'store'])->name('article.store');
 Route::get('/edit/{id}', [ArticleController::class, 'edit'])->name('edit');
 Route::post('/update/{id}', [ArticleController::class, 'update'])->name('update');
+Route::get('/', [ArticleController::class, 'accueil'])->name('accueil');
 
