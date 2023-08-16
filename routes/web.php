@@ -191,4 +191,5 @@ Route::get('/consulte', [ArticleController::class, 'consulte'])->name('consulte'
 Route::post('/article', [ArticleController::class, 'store'])->name('article.store');
 Route::get('/edit/{id}', [ArticleController::class, 'edit'])->name('edit');
 Route::post('/update/{id}', [ArticleController::class, 'update'])->name('update');
+Route::get('/delete/{id}', [ArticleController::class, 'delete'])->name('delete');
 

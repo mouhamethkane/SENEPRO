@@ -5,7 +5,7 @@
     <h1 class="text-center">Modifier un article</h1>
 
  
-   <form action="{{route('update',$article->id)}}" method="POST">
+   <form action="{{route('update',$article->id)}}" method="POST" enctype="multipart/form-data">
     @csrf
 
     @if(session('status'))
@@ -28,6 +28,11 @@
 <div class="mb-3">
   <label for="catregorie" class="form-label">Categorie</label>
   <input type="text" class="form-control" name="categorie"  id="categorie" value="{{$article['categorie']}}" placeholder="Donner une categorie">
+</div>
+<div class="mb-3">
+  <label for="avatar" class="form-label">Image</label>
+  <img src="{{asset('avatar/'. $article->avatar)}}" alt="" width="100" height="60">
+  <input type="file" class="form-control border border-secondary" name="avatar"  id="avatar" value="{{ old('image')}}" placeholder="Ajouter un image">
 </div>
 </div>
 <button type="submit" class="btn btn-lg btn-secondary">Modifier un article</button>

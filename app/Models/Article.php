@@ -13,5 +13,7 @@ class Article extends Model
         'titre',
         'contenu',
         'categorie',
+        'avatar',
+        
     ];
 }

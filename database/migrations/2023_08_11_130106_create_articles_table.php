@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('titre');
             $table->longText('contenu')->nullable();
             $table->string('categorie')->nullable();
+            $table->string('avatar');
             $table->timestamps();
         });
     }

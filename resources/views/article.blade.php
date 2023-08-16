@@ -5,7 +5,7 @@
     <h1 class="text-center">Ajouter un article</h1>
 
  
-   <form action="{{route('article.store')}}" method="POST">
+   <form action="{{route('article.store')}}" method="POST" enctype="multipart/form-data">
     @csrf
 
     @if(session('status'))
@@ -28,6 +28,10 @@
 <div class="mb-3">
   <label for="catregorie" class="form-label">Categorie</label>
   <input type="text" class="form-control border border-secondary" name="categorie"  id="categorie" value="{{ old('categorie')}}" placeholder="Donner une categorie">
+</div>
+<div class="mb-3">
+  <label for="avatar" class="form-label">Image</label>
+  <input type="file" class="form-control border border-secondary" name="avatar"  id="image" value="{{ old('avatar')}}" placeholder="Ajouter un image">
 </div>
 </div>
 <button type="submit" class="btn btn-lg btn-secondary">Ajouter un article</button>

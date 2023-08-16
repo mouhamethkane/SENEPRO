@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 use App\Models\Article;
+
 
 
 class ArticleController extends Controller
@@ -44,14 +46,38 @@ class ArticleController extends Controller
         $request->validate([
             'titre' => 'required',
             'contenu' => 'required',
+            
         ]);
         $article = new Article();
         $article->titre = $request->titre;
         $article->contenu = $request->contenu;
         $article->categorie = $request->categorie;
-        $article->save();
-        
-        return redirect('/article')->with('status', 'Votre article à été bien enregistré.');
+
+
+
+        // Handle file Upload
+        if($request->hasFile('avatar')){
+
+            //Storage::delete('/public/avatars/'.$user->avatar);
+
+            // Get filename with the extension
+            $filenameWithExt = $request->file('avatar')->getClientOriginalName();
+            //Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just ext
+            $extension = $request->file('avatar')->getClientOriginalExtension();
+            // Filename to store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+            // Upload Image
+            $request->file('avatar')->move('avatar',$fileNameToStore);
+            //dd($article) = $request->avatar();
+            $article->avatar=$fileNameToStore;
+            //dd($article);
+            $article->save();
+
+            return redirect('/consulte')->with('status', 'Votre article à été bien enregistré.');
+ 
+        }
     }
 
     /**
@@ -72,21 +98,48 @@ class ArticleController extends Controller
         $request->validate([
             'titre' => 'required',
             'contenu' => 'required',
+            
         ]);
         $article = Article::find($id);
         $article->titre = $request->titre;
         $article->contenu = $request->contenu;
         $article->categorie = $request->categorie;
-        $article->update();
 
-        return redirect('/article')->with('status', 'Votre article à été bien modifié.');
+
+
+        // Handle file Upload
+        if($request->hasFile('avatar')){
+
+            //Storage::delete('/public/avatars/'.$user->avatar);
+
+            // Get filename with the extension
+            $filenameWithExt = $request->file('avatar')->getClientOriginalName();
+            //Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get just ext
+            $extension = $request->file('avatar')->getClientOriginalExtension();
+            // Filename to store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+            // Upload Image
+            $request->file('avatar')->move('avatar',$fileNameToStore);
+            //dd($article) = $request->avatar();
+            $article->avatar=$fileNameToStore;
+            //dd($article);
+            $article->update();
+
+            return redirect('/consulte')->with('status', 'Votre article à été bien Modifié.');
+ 
+        }
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function delete(string $id)
     {
-        //
+        $article = Article::find($id);
+        $article->delete();
+
+        return redirect('/consulte')->with('status', 'Votre article à été bien supprimé.');
     }
 }
