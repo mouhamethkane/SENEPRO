@@ -8,6 +8,8 @@ use App\Models\Article;
 
 
 
+
+
 class ArticleController extends Controller
 {
     /**
@@ -17,7 +19,10 @@ class ArticleController extends Controller
      */
     public function index()
     {
-       return view('/article');
+        $article = Article::all();
+       return view('/article', [
+        'article' => $article
+       ]);
     }
     public function consulte()
     {
@@ -55,6 +60,7 @@ class ArticleController extends Controller
 
 
 
+
         // Handle file Upload
         if($request->hasFile('avatar')){
 
@@ -78,6 +84,7 @@ class ArticleController extends Controller
             return redirect('/consulte')->with('status', 'Votre article à été bien enregistré.');
  
         }
+       
     }
 
     /**
@@ -130,6 +137,12 @@ class ArticleController extends Controller
             return redirect('/consulte')->with('status', 'Votre article à été bien Modifié.');
  
         }
+    }
+
+    public function accueil()
+    {
+        $article = Article::all();
+        return view('ouvriers.accueil',compact('article'));
     }
 
     /**
