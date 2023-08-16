@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -21,6 +22,10 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
+Route::get('/article', function () {
+    return view('article');
+})->name('index');
 
 Route::get('/accueil', function () {
     return view('ouvriers.accueil');
@@ -180,4 +185,10 @@ Route::middleware('auth')->group(function(){
 Route::get('/contact', [MailController::class, 'contact'])->name('contactpage');
 Route::post('/contact', [MailController::class, 'contactSend'])->name('contactSend');
 
+
+Route::get('/article', [ArticleController::class, 'index'])->name('index');
+Route::get('/consulte', [ArticleController::class, 'consulte'])->name('consulte');
+Route::post('/article', [ArticleController::class, 'store'])->name('article.store');
+Route::get('/edit/{id}', [ArticleController::class, 'edit'])->name('edit');
+Route::post('/update/{id}', [ArticleController::class, 'update'])->name('update');
 
