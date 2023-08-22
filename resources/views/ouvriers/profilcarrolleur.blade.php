@@ -136,6 +136,16 @@
                 <hr class="col-sm-5">
             <h1 class="text-center text-dark">Mettez vos commentaire<h1>
             <hr>
+            @if(session('status'))
+        <div class="alert alert-success">{{ session('status') }}</div>
+
+    @endif
+    @if($errors)
+        @foreach ($errors->all() as $error)
+        <div class="alert alert-danger">{{ $error }}</div>
+        @endforeach
+    @endif
+
             @foreach($comments as $comment)
                 <form action="/comments" method="POST">
                     @csrf
