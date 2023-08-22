@@ -113,12 +113,11 @@
             <h1 class="text-center">Les commentaires</h1>
             @foreach($comments as $comment)
                 <hr>
-        
                 <hr class="col-sm-5">
                 <h5>{{$comment->nom}}</h5>
                 <h5>{{$comment->prenom}}</h5>
                 <h5>{{$comment->content}}</h5>
-                <h6>date et heure</h6>
+                <h6>{{date('d/m/y G:i s')}}</h6>
                 @endforeach
                 <hr>
                 <h1 class="text-center">Commentaire</h1>
