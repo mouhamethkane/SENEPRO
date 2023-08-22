@@ -136,14 +136,24 @@
                 <hr class="col-sm-5">
             <h1 class="text-center text-dark">Mettez vos commentaire<h1>
             <hr>
-                <form action="" method="POST">
+            @foreach($comments as $comment)
+                <form action="/comments" method="POST">
                     @csrf
+                    <div class="mb-3">
+            <label for="nom" class="form-label">{{$comment->nom}}</label>
+            <input type="text" class="form-control border border-secondary" id="nom" placeholder="Donner votre nom" name="nom" required>
+        </div>
+        <div class="mb-3">
+            <label for="prenom" class="form-label">{{$comment->prenom}}</label>
+            <input type="text" class="form-control border border-secondary" id="prenom" placeholder="Donner votre prenom" name="prenom" required>
+        </div>
                     <div class="form-group">
-                        <label class="for-content">Votre commentaire</label>
-                        <textarea  class="from-control border-secondary" name="content" id="content" cols="70" rows="3"></textarea>
+                        <label class="for-content">{{$comment->content}}</label>
+                        <textarea  class="from-control border-secondary" name="content" id="content" cols="70" rows="3" required></textarea>
                         <button type="submit" class="btn btn-lg btn-secondary border-secondary mt-3">Soumettre mon commentaire</button>
                     </div>
                 </form>
             </div>
+            @endforeach
 @endsection 
   

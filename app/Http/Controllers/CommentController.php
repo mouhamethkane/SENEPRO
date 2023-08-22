@@ -25,5 +25,11 @@ class CommentController extends Controller
 
         return redirect('/profilcarrolleur')->with('status', 'votre commentaire à été bien enregistré.');
     }
+    public function profilcarrolleur()
+    {
+        $comments = Comment::all();
+
+        return view('profilcarrolleur', compact('comments'));
+    }
 
 }

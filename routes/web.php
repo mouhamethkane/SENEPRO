@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -196,4 +197,6 @@ Route::get('/delete/{id}', [ArticleController::class, 'delete'])->name('delete')
 
 Route::get('/', [ArticleController::class, 'accueil'])->name('accueil');
 Route::get('/article/{id}', [ArticleController::class, 'show']);
+
+Route::post('/comments', [CommentController::class, 'comments']);
 
