@@ -29,7 +29,7 @@ class CommentController extends Controller
     {
         $comments = Comment::all();
 
-        return view('profilcarrolleur', compact('comments'));
+        return view('ouvriers.profilcarrolleur', compact('comments'));
     }
 
 }

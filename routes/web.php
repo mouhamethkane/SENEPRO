@@ -199,4 +199,5 @@ Route::get('/', [ArticleController::class, 'accueil'])->name('accueil');
 Route::get('/article/{id}', [ArticleController::class, 'show']);
 
 Route::post('/comments', [CommentController::class, 'comments']);
+Route::get('profilcarrolleur', [CommentController::class, 'profilcarrolleur']);
 

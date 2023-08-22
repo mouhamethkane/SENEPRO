@@ -110,60 +110,38 @@
                 </div>
                 </div> 
             <div class="container">
-                <hr>
-                <h1 class="text-center">Les commentaires</h1>
-                <hr class="col-sm-5">
-                <h5>nom complets</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-                    Corrupti ratione cum dicta, vitae sit architecto distinctio<br> 
-                    veniam illo error deleniti a eos enim quidem modi ipsa ullam<br> 
-                    est magnam delectus!</p>
-                <h6>date et heure</h6>
-                <hr class="col-sm-5">
-                <h5>Mouhameth Kane</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-                    Corrupti ratione cum dicta, vitae sit architecto distinctio<br> 
-                    veniam illo error deleniti a eos enim quidem modi ipsa ullam<br> 
-                    est magnam delectus!</p>
-                <h6>08/06/2023 à 11h:30mn</h6>
-                <hr class="col-sm-5">
-                <h5>Oumou Cissé</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-                    Corrupti ratione cum dicta, vitae sit architecto distinctio<br> 
-                    veniam illo error deleniti a eos enim quidem modi ipsa ullam<br> 
-                    est magnam delectus!</p>
-                <h6>12/12/2023 à 02h:50mn</h6>
-                <hr class="col-sm-5">
-            <h1 class="text-center text-dark">Mettez vos commentaire<h1>
-            <hr>
-            @if(session('status'))
-        <div class="alert alert-success">{{ session('status') }}</div>
-
-    @endif
-    @if($errors)
-        @foreach ($errors->all() as $error)
-        <div class="alert alert-danger">{{ $error }}</div>
-        @endforeach
-    @endif
-
+            <h1 class="text-center">Les commentaires</h1>
             @foreach($comments as $comment)
-                <form action="/comments" method="POST">
-                    @csrf
-                    <div class="mb-3">
-            <label for="nom" class="form-label">{{$comment->nom}}</label>
-            <input type="text" class="form-control border border-secondary" id="nom" placeholder="Donner votre nom" name="nom" required>
+                <hr>
+        
+                <hr class="col-sm-5">
+                <h5>{{$comment->nom}}</h5>
+                <h5>{{$comment->prenom}}</h5>
+                <h5>{{$comment->content}}</h5>
+                <h6>date et heure</h6>
+                @endforeach
+                <hr>
+                <h1 class="text-center">Commentaire</h1>
+                <hr>
+
+    <form action="/comments" method="POST">
+        @csrf
+      
+        <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" class="form-control border border-secondary" id="nom"  placeholder="Donner votre nom" name="nom" required>
+            
         </div>
         <div class="mb-3">
-            <label for="prenom" class="form-label">{{$comment->prenom}}</label>
+            <label for="prenom" class="form-label">Prenom</label>
             <input type="text" class="form-control border border-secondary" id="prenom" placeholder="Donner votre prenom" name="prenom" required>
         </div>
-                    <div class="form-group">
-                        <label class="for-content">{{$comment->content}}</label>
-                        <textarea  class="from-control border-secondary" name="content" id="content" cols="70" rows="3" required></textarea>
-                        <button type="submit" class="btn btn-lg btn-secondary border-secondary mt-3">Soumettre mon commentaire</button>
-                    </div>
-                </form>
-            </div>
-            @endforeach
+        <div class="mb-3">
+            <label for="content" class="form-label">Commentaire</label>
+            <textarea name="content" id="content" cols="10" rows="10" class="form-control border border-secondary" placeholder="saisir votre description" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-secondary">Commenter</button>
+    </form>
+ 
 @endsection 
   
