@@ -182,22 +182,22 @@
             </div>
           </div>
         <!-- ********************************************************************************   -->
-          
-            @foreach ($article as $article)
-            <div class="container bg-dark text-white rounded-pill my-4">
+        <div class="container bg-dark text-white rounded-pill my-4">
             <h1>
                 <center><strong>Voici la liste des articles</strong> </center>
             </h1>
         </div>
+            @foreach ($article as $article)
             <div class="container bg-white ">
                 <div class="row">
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <h5 class="card-title">{{ $article->titre }}</h5>
+                      <img src="{{asset('avatar/'. $article->avatar)}}"  class="card-img-top" height="200px" alt="">
+                    <h5 class="card-title my-4"><a href="/article/{{ $article->titre }}" class="btn btn-primary">{{ $article->titre }}</h5></a>
                         <p class="card-text">{{ $article->contenu }}</p>
                         <p class="card-text">{{ $article->categorie }}</p>
-                        <a href="/profilculte" class="btn btn-primary">Voir article</a>
+                        
                     </div>
                     </div>
                 </div>  

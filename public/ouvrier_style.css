@@ -106,3 +106,60 @@ b{
     color: #fff;
     bottom: 0px;
 }
+
+/* ************************************************************************* */
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: #000;
+    color:#fff;
+    padding: 30px 100px;
+}
+
+footer h1{
+    font-family: 'Playfair Display', sans-serif;
+    border-bottom: 1px solid #fff;
+    width: 20%;
+    padding-bottom: 5px; 
+}
+
+footer .services{
+    margin-top: -10px;
+    display:flex ;
+    flex-wrap: wrap;
+}
+
+footer .services .service{
+    margin-right: 30px;
+}
+
+footer .services .service p{
+    max-width: 300px;
+}
+
+footer #contact{
+    color: rgba(180, 180, 180);
+}
+
+@media screen and (max-width:680px) {
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .card{
+        margin: 10px;
+    }
+    .main .content .card .right img{
+        height: 200px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    } 
+} 
+

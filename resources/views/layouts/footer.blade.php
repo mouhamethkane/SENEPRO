@@ -3,10 +3,29 @@
     Quote
   </div> -->
   <div class="card-body">
-    <blockquote class="blockquote mb-0">
-      <p><strong>Bienvenu dans notre site qui vous facilite la recherche d'un ou plusieur 
-        ouvriers dont ce que vous avez besoin.</strong></p>
-      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </blockquote>
+  <footer>
+       <h1>Nos services</h1>
+       <div class="services">
+           <div class="service">
+               <h3>Trouver son ouvrier</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Tempore cumque nihil doloribus ad nemo iste dolore beatae id laudantium
+                 odit ratione natus accusantium optio quam soluta, explicabo, corrupti eaque! Ex?</p>
+           </div>
+           <div class="service">
+            <h3>Paiement en ligne</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Tempore cumque nihil doloribus ad nemo iste dolore beatae id laudantium
+              odit ratione natus accusantium optio quam soluta, explicabo, corrupti eaque! Ex?</p>
+           </div>
+           <div class="service">
+            <h3>Aimer ou rembourcer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Tempore cumque nihil doloribus ad nemo iste dolore beatae id laudantium
+              odit ratione natus accusantium optio quam soluta, explicabo, corrupti eaque! Ex?</p>
+           </div>
+       </div>
+       <p id="contact">Contact : 78 630 25 96 | &copy; 2023, SENEPRO.</p>
+   </footer>
   </div>
 </div>

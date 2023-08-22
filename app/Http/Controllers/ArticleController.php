@@ -90,9 +90,12 @@ class ArticleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $article = Article::find($id);
+        return view('ouvriers.show', [
+            'article' => $article
+        ]);
     }
 
     /**
@@ -145,6 +148,8 @@ class ArticleController extends Controller
         return view('ouvriers.accueil',compact('article'));
     }
 
+   
+
     /**
      * Remove the specified resource from storage.
      */
@@ -155,4 +160,6 @@ class ArticleController extends Controller
 
         return redirect('/consulte')->with('status', 'Votre article à été bien supprimé.');
     }
+
 }
+   

@@ -195,4 +195,5 @@ Route::post('/update/{id}', [ArticleController::class, 'update'])->name('update'
 Route::get('/delete/{id}', [ArticleController::class, 'delete'])->name('delete');
 
 Route::get('/', [ArticleController::class, 'accueil'])->name('accueil');
+Route::get('/article/{id}', [ArticleController::class, 'show']);
 
