@@ -8,13 +8,21 @@
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestion des ouvrier</a>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestion des ouvriers</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="layouts.Crud.ajouter">Nouvel ouvrier</a>
-                    <a class="dropdown-item" href="layouts.Crud.index">Liste des ouvriers</a>
+                    <a class="dropdown-item" href="{{route('ouvrier.create')}}">Nouvel ouvrier</a>
+                    <a class="dropdown-item" href="/listouvrier">Liste des ouvriers</a>
+
                 </div>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestion des metiers</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="/create">Nouvel metier</a>
+                    <a class="dropdown-item" href="{{route('metiers.index')}}">Liste des metiers</a>
 
+                </div>
+            </li>
             <li class="nav-item">
                 <a class="nav-link active" href="/contact" aria-current="page">Contactez-Nous<span class="visually-hidden">(current)</span></a>
             </li>

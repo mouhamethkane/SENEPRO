@@ -28,7 +28,7 @@
          @endforeach
     </ul>
 
-    <form action="/ajouter/traitement" method="POST" class="form-group">
+    <form action="{{route('ouvrier.ajouter')}}" method="POST" class="form-group" enctype="multipart/form-data">
         @csrf
 
   <div class="form-group">
@@ -42,20 +42,16 @@
     </div>
 
     <div class="form-group">
-    <label for="Prenom">metier</label>
-    <input type="text" class="form-control" id="Prenom" name="prenom">
-    </div>
-    <div class="form-group">
     <label for="Prenom">adresse</label>
-    <input type="text" class="form-control" id="Prenom" name="prenom">
+    <input type="text" class="form-control" id="Prenom" name="adresse">
     </div>
     <div class="form-group">
     <label for="Prenom">Telephone</label>
-    <input type="text" class="form-control" id="Prenom" name="prenom">
+    <input type="text" class="form-control" id="Prenom" name="Telephone">
     </div>
     <div class="form-group">
-    <label for="Classe">Classe</label>
-    <input type="text" class="form-control" id="Classe" name="classe">
+    <label for="Classe">image</label>
+    <input type="file" class="form-control" id="Classe" name="img">
     </div>
    <br>
   <button type="submit" class="btn btn-primary">AJOUTER</button>
