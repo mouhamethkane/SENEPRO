@@ -15,12 +15,13 @@ class CommentController extends Controller
             'nom' => 'required',
             'prenom' => 'required',
             'content' => 'required',
+            
         ]);
         $comment = new Comment();
         $comment->nom = $request->nom;
         $comment->prenom = $request->prenom;
         $comment->content = $request->content;
-
+        
         $comment->save();
 
         return redirect('/profilcarrolleur')->with('status', 'votre commentaire à été bien enregistré.');

@@ -162,4 +162,31 @@ footer #contact{
         padding: 30px;
     } 
 } 
+/*************************************************************/
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(225, 255, 225);
+}
 
+.scroll-bg{
+    background: rgba(180, 180, 180);
+    width: 900px;
+    margin: 10% auto;
+}
+
+.scroll-div{
+    width: 900px;
+    background: rgb(65, 61, 61);;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 10;
+}
+
+.scroll-object{
+    color: white;
+    font-family: cursive;
+    font-size: 15px;
+    padding: 20px;
+}

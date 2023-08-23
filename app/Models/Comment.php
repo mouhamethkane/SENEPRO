@@ -14,7 +14,7 @@ class Comment extends Model
         'nom',
         'prenom',
         'content',
-       
+        
         
     ];
 
