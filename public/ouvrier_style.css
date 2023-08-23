@@ -177,7 +177,7 @@ body{
 
 .scroll-div{
     width: 900px;
-    background: rgb(65, 61, 61);;
+    background: rgb(255, 253, 253);;
     height: 300px;
     overflow: hidden;
     overflow-y: scroll;
@@ -185,7 +185,7 @@ body{
 }
 
 .scroll-object{
-    color: white;
+    color: #000;
     font-family: cursive;
     font-size: 15px;
     padding: 20px;
