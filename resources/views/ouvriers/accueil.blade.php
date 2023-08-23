@@ -187,21 +187,23 @@
                 <center><strong>Voici la liste des articles</strong> </center>
             </h1>
         </div>
-            @foreach ($article as $article)
+           
             <div class="container bg-white ">
-                <div class="row">
+                <div class="row"> 
+                  @foreach ($article as $article)
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
                       <img src="{{asset('avatar/'. $article->avatar)}}"  class="card-img-top" height="200px" alt="">
                     <h5 class="card-title my-4"><a href="/article/{{ $article->titre }}" class="btn btn-primary">{{ $article->titre }}</h5></a>
                         <p class="card-text">{{ $article->contenu }}</p>
-                        <p class="card-text">{{ $article->categorie }}</p>
-                        
+                        <p class="card-text">{{ $article->categorie }}</p>    
                     </div>
                     </div>
-                </div>  
-             </div>     
-            @endforeach
+                </div> 
+                @endforeach 
+             </div> 
+            </div>     
+          
 @endsection 
   
