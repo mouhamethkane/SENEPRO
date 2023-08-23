@@ -11,7 +11,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestion des ouvriers</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
                     <a class="dropdown-item" href="{{route('ouvrier.create')}}">Nouvel ouvrier</a>
-                    <a class="dropdown-item" href="/listouvrier">Liste des ouvriers</a>
+                    <a class="dropdown-item" href="/listouvrier">Listes des ouvriers</a>
 
                 </div>
             </li>
