@@ -228,10 +228,3 @@ Route::controller(MetierController::class)->group(function () {
     Route::post('/metiers.store', 'store')->name('metiers.store');
     Route::delete('/metiers.destroy/{id}', 'destroy')->name('metiers.destroy');
     });
-
-
-
-
-
-
-
