@@ -201,3 +201,23 @@ Route::get('/article/{id}', [ArticleController::class, 'show']);
 Route::post('/comments', [CommentController::class, 'comments']);
 Route::get('profilcarrolleur', [CommentController::class, 'profilcarrolleur']);
 
+// *******************************************************************
+Route::get('/delete-etudiant/{id}', [EtudiantController::class, 'delete_etudiant']);
+Route::get('/update-etudiant/{id}', [EtudiantController::class, 'update_etudiant']);
+Route::post('/update/traitement', [EtudiantController::class, 'update_etudiant_traitement']);
+Route::get('/etudiant', [EtudiantController::class, 'liste_etudiant']);
+Route::get('/ajouter', [EtudiantController::class, 'ajouter_etudiant']);
+Route::post('/ajouter/traitement', [EtudiantController::class, 'ajouter_etudiant_traitement']);
+
+Route::post('/bar', [EtudiantController::class, 'bar']);
+
+Route::controller(MetierController::class)->group(function () {
+
+    Route::get('/metiers.index', 'index')->name('metiers.index');
+    Route::get('/metiers.create', 'create')->name('metiers.create');
+    Route::get('/metiers.edit/{id}/edit', 'edit')->name('metiers.edit');
+    Route::post('/metiers.update/{id}', 'update')->name('metiers.update');
+    Route::post('/metiers.store', 'store')->name('metiers.store');
+    Route::delete('/metiers.destroy/{id}', 'destroy')->name('metiers.destroy');
+    });
+
