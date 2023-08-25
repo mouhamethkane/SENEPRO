@@ -20,6 +20,14 @@ use Illuminate\Support\Facades\Route;
 //     return view('ouvriers.accueil');
 // });
 
+Route::get("/create",[ouvrierController::class,"index"])->name('ouvrier.create');
+Route::post("/ajouter",[ouvrierController::class,"ajouter"])->name('ouvrier.ajouter');
+Route::get("/listouvrier",[ouvrierController::class,"listouvrier"])->name('crud.listouvrier');
+Route::get("/update/{id}",[ouvrierController::class,"update"])->name('crud.update');
+
+Route::post("/edit",[ouvrierController::class,"edit"])->name('crud.edit');
+Route::get("/crud.delete/{id}",[ouvrierController::class,"delete"])->name('crud.delete');
+
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
