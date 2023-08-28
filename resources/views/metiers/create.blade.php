@@ -9,7 +9,7 @@
 
 <div class="card uper">
   <div class="card-header">
-    Ajouter une une metier
+    <strong>Ajouter une metier</strong>
   </div>
 
   <div class="card-body">

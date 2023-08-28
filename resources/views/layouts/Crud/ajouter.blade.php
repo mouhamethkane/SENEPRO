@@ -1,33 +1,28 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project Laravel</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
-  <body>
 
-    <div class="container">
-  <div class="row">
+@extends('layouts.app')
 
-    <div class="col s12">
-    <h1>AJOUTER UN OUVRIER </h1>
-    <hr>
-    
-    @if(session('status'))
+@section('content')
+<style>
+  .uper {
+    margin-top: 40px;
+  }
+</style>
 
-    <div class="alert alert-success">
-        {{session('status')}}
+<div class="card uper">
+  <div class="card-header">
+    <strong>Ajouter une ouvrier</strong>
+  </div>
+
+  <div class="card-body">
+    @if ($errors->any())
+      <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+      </div><br />
     @endif
-</div>
-
-    <ul>
-        @foreach ($errors->all() as $error)
-            <li class="alert alert-danger">{{ $error }}</li>
-         @endforeach
-    </ul>
-
     <form action="{{route('ouvrier.ajouter')}}" method="POST" class="form-group" enctype="multipart/form-data">
         @csrf
 
@@ -60,11 +55,4 @@
 
 </form>
 
-</div>
-   
-  </div>
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
-</html>
+@endsection

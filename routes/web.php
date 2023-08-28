@@ -4,6 +4,8 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MetierController;
+use App\Http\Controllers\ouvrierController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -218,6 +220,8 @@ Route::get('/ajouter', [EtudiantController::class, 'ajouter_etudiant']);
 Route::post('/ajouter/traitement', [EtudiantController::class, 'ajouter_etudiant_traitement']);
 
 Route::post('/bar', [EtudiantController::class, 'bar']);
+
+// ****************************************************************************
 
 Route::controller(MetierController::class)->group(function () {
 
