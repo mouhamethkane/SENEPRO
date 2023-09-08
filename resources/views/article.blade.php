@@ -37,4 +37,5 @@
 <button type="submit" class="btn btn-lg btn-secondary">Ajouter un article</button>
     </form>
     <br><br>
+    
  @endsection

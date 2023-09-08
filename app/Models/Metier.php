@@ -12,7 +12,8 @@ class Metier extends Model
     protected $fillable =[
         'nom', 'domaine','image'
     ];
-    public function ouvrier(){
+    public function ouvriers(){
         return $this->belongsToMany(ouvrier::class);
     }
+    
 }

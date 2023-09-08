@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Auth\Events\Validated;
-use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Metier;
 use App\Models\Article;
+use App\Models\ouvrier;
+use Illuminate\Http\Request;
+use Illuminate\Auth\Events\Validated;
 
 
 
@@ -144,8 +147,9 @@ class ArticleController extends Controller
 
     public function accueil()
     {
-        $article = Article::all();
-        return view('ouvriers.accueil',compact('article'));
+        $article = Article::paginate(3);
+        $metier = Metier::all();
+        return view('ouvriers.accueil',compact('article','metier'));
     }
 
    
@@ -159,6 +163,16 @@ class ArticleController extends Controller
         $article->delete();
 
         return redirect('/consulte')->with('status', 'Votre article à été bien supprimé.');
+    }
+
+    public function lismembre($id){
+        $ouvriersWithRoleId = Metier::whereHas('ouvriers', function ($query) use ($id){
+            $query->where('id', $id);
+        })->get();
+
+        dd($ouvriersWithRoleId);
+        // return view('ouvriers.carreleur',compact('ouvrier'));
+        return $id;
     }
 
 }

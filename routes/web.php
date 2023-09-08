@@ -182,15 +182,6 @@ Route::get('/culte', function () {
     return view('ouvriers.culte');
 })->name('culte');
 
-Route::get('/dashboard', function(){
-    return view('dashboard');
-})->name('dashboard');
-
-Route::middleware('auth')->group(function(){
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profole.edit');
-    Route::get('/profile', [ProfileController::class, 'update'])->name('profole.update');
-    Route::get('/profile', [ProfileController::class, 'destroy'])->name('profole.destroy');
-});
 
 
 Route::get('/contact', [MailController::class, 'contact'])->name('contactpage');
@@ -202,6 +193,8 @@ Route::get('/consulte', [ArticleController::class, 'consulte'])->name('consulte'
 Route::post('/article', [ArticleController::class, 'store'])->name('article.store');
 Route::get('/edit/{id}', [ArticleController::class, 'edit'])->name('edit');
 Route::post('/update/{id}', [ArticleController::class, 'update'])->name('update');
+Route::get('/mertiermembre/{id}', [ArticleController::class, 'lismembre'])->name('mertiermembre');
+
 
 Route::get('/delete/{id}', [ArticleController::class, 'delete'])->name('delete');
 
