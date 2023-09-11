@@ -22,7 +22,7 @@
         <a href="login.php" class="login">Login</a>
 
         <img src="{{asset('image/kane.jpg')}}" alt="" class="video_entete">
-        <p class="nomsite">Application de recherche d'ouvrier facilement<p>
+        <p class="nomsite">"KAY MA DEFARAL LA"<p>
 
             <div id="formauto">
                 <form name="formauto" method="post" action="">

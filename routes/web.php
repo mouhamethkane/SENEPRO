@@ -182,6 +182,25 @@ Route::get('/culte', function () {
     return view('ouvriers.culte');
 })->name('culte');
 
+Route::get('/inscription', function(){
+    return view('inscription');
+});
+
+Route::post('/inscription', function(){
+
+    $utilisateur = new App\Utilisateur;
+    $utilisateur->email = request('email');
+    $utilisateur->mot_de_passe = request('password');
+
+    $utilisateur->save();
+    return 'Nous avons recus votre email qui est '. request('email');
+   
+});
+
+
+Route::get('/connexion', 'ConnexionController@formulaire');
+Route::post('/connexion', 'ConnexionController@formulaire');
+
 
 
 Route::get('/contact', [MailController::class, 'contact'])->name('contactpage');

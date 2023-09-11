@@ -170,8 +170,7 @@ class ArticleController extends Controller
             $query->where('id', $id);
         })->get();
 
-        dd($ouvriersWithRoleId);
-        // return view('ouvriers.carreleur',compact('ouvrier'));
+        // dd($ouvriersWithRoleId);
         return $id;
     }
 
