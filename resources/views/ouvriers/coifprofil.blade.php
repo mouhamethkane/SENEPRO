@@ -48,67 +48,24 @@
                 <center><strong>Voici les realisations de Djibril Gaye</strong> </center>
             </h1>
         </div>
-            <div class="container bg-white">
-                <div class="row">
+        <div class="container bg-white ">
+                <div class="row"> 
+                  @foreach ($ouvriers as $ouvriers)
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/coiff1.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                        <h5 class="card-title">Degrade</h5>
-                        <a href="/coiffeurprofil" class=""></a>
+                      <img src="{{asset('ouvrierprofil/'. $ouvriers->img)}}"  class="card-img-top" height="200px" alt="">
+                        <p class="card-text">{{ $ouvriers->prenom }}</p>    
+                        <p class="card-text">{{ $ouvriers->nom }}</p>
+                        <p class="card-text">{{ $ouvriers->adresse }}</p> 
+                        <p class="card-text">{{ $ouvriers->telephone }}</p>
+                        <h3 class="card-title my-4"><a href="/ouvriers/{{ $ouvriers->id }}" class="btn btn-primary">{{ $ouvriers->nommetier  }}</h3></a>        
                     </div>
                     </div>
-                </div>
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/coiff2.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                        <h5 class="card-title">Degrade</h5>
-                        <a href="/coiffeurprofil" class=""></a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/coiff3.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                    <h5 class="card-title">Degrade</h5>
-                        <a href="/coiffeurprofil" class=""></a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-    <!-- ***********************************************************************************      -->
-    <div class="container bg-white">
-                <div class="row">
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/coiff4.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                    <h5 class="card-title">Degrade</h5>
-                        <a href="/coiffeurprofil" class=""></a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/coiff5.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                    <h5 class="card-title">Degrade</h5>
-                        <a href="/coiffeurprofil" class=""></a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/coiff6.jpg')}}" class="rounded bg-dark" width="370" height="250"alt="mass"><br><br>
-                    <h5 class="card-title">Degrade</h5>
-                        <a href="/coiffeurprofil" class=""></a>
-                    </div>
-                    </div>
-                </div>
                 </div> 
+                @endforeach 
+             </div> 
+            </div>
                 <div class="container">
                 <hr>
                 <h1 class="text-center">Les commentaires</h1>

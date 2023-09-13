@@ -45,6 +45,15 @@
     <input type="text" class="form-control" id="Prenom" name="Telephone">
     </div>
     <div class="form-group">
+    <label for="Prenom">metier</label>
+    <select class="form-select" aria-label="Default select example" name="metier" id="metier">
+    <option  selected value="">...</option>
+    @foreach($metier as $m)
+      <option  selected value="{{ $m->id }}">{{ $m->nommetier }}</option>
+    @endforeach  
+    </select>
+    </div>
+    <div class="form-group">
     <label for="Classe">image</label>
     <input type="file" class="form-control" id="Classe" name="img">
     </div>

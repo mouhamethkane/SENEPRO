@@ -19,6 +19,6 @@ protected $fillable = [
 
 
     public function metiers(){
-        return $this->belongsToMany(Metier::class);
+        return $this->belongsTo(Metier::class);
     }
 }

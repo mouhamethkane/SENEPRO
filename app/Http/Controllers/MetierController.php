@@ -38,7 +38,7 @@ class MetierController extends Controller
            'image'=>'required'
         ]);
         $metiers = new metier();
-        $metiers->nom = $request->nom;
+        $metiers->nommetier = $request->nom;
         $metiers->domaine = $request->domaine;
         $image = $request->file('image');
        // dd($image);
@@ -80,12 +80,12 @@ class MetierController extends Controller
     {
         $request->validate([
         
-            'nom' => 'required',
+            'nommetier' => 'required',
             'domaine' => 'required',
            'image'=>'required'
         ]);
         $metiers = metier::findOrFail($id);
-        $metiers->nom = $request->nom;
+        $metiers->nommetier = $request->nom;
         $metiers->domaine = $request->domaine;
         $image = $request->file('image');
            
@@ -113,6 +113,13 @@ class MetierController extends Controller
         $metiers->delete();
 
         return redirect('/')->with('success', 'metier Supprime avec succès');
+    }
+
+    public function coiffeur($id)
+    {
+        $ouvriers = ouvrier::find($id);
+
+        // dd($ouvriers);
     }
 }
 

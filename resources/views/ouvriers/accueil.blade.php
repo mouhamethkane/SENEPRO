@@ -41,7 +41,7 @@
                 <img src="{{asset('/metierprofil/'.$metier->image)}}" class="card-img-top" height="100px" alt="...">
                   <div class="card-body"> 
                   <p class="card-text txt-secondary">{{ $metier->domaine }}</p>    
-                  <h3 class="card-title my-4"><a href="{{route('mertiermembre',$metier->id)}}" class="">{{ $metier->nom }}</h3></a>       
+                  <h3 class="card-title my-4"><a href="{{route('mertiermembre',$metier->id)}}" class="">{{ $metier->nommetier }}</h3></a>       
                   </div>
                 </div>  
              </div>

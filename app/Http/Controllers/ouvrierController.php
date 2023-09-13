@@ -5,8 +5,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Metier;
 use App\Models\ouvrier;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use League\CommonMark\Renderer\NoMatchingRendererException;
 
 class ouvrierController extends Controller
@@ -19,7 +21,8 @@ class ouvrierController extends Controller
 
     public function index()
     {
-        return view('layouts.crud.ajouter');
+        $metier=Metier::all();
+        return view('layouts.crud.ajouter', compact('metier'));
     }
 
 
@@ -34,13 +37,16 @@ class ouvrierController extends Controller
         $validat =  $request->validate([
             'prenom' => 'required',
             'nom' => 'required',
-           'img'=>'required'
+           'img'=>'required',
+           'metier'=>'required'
         ]);
         $ouvrier = new ouvrier();
         $ouvrier->nom = $request->nom;
         $ouvrier->prenom = $request->prenom;
         $ouvrier->adresse = $request->adresse;
         $ouvrier->telephone = $request->Telephone;
+        $ouvrier->metiers_id = $request->metier;
+       
         $image = $request->file('img');
        // dd($image);
             $destinationPath = 'ouvrierprofil/';
@@ -176,7 +182,25 @@ return back()->with('success','ouvrier modifie avec succes');
         return back()->with('success', 'ouvrier supprimé !');
     }
     
+    public function lismembre($id)
+    {
+        $ouvriers = DB::table('ouvriers')
+                ->join('metiers', 'metiers.id', '=', 'ouvriers.metiers_id')
+                ->where('metiers_id', '=', $id)
+                ->get();
+               // dd($ouvriers);
+                return view('ouvriers.coiffureh', compact('ouvriers'));        
+    }
 
+    public function lisouvrier($id)
+    {
+        $ouvriers = DB::table('ouvriers')
+                ->join('metiers', 'metiers.id', '=', 'ouvriers.metiers_id')
+                ->where('metiers_id', '=', $id)
+                ->get();
+               // dd($ouvriers);
+                return view('ouvriers.coifprofil', compact('ouvriers'));        
+    }
 
 }
 

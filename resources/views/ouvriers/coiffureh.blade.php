@@ -23,7 +23,7 @@
             <h3>
                 <div class="row">
                     <div class="col bg-white rounded-circle text-dark">
-                        <center>vous etes dans la categorie des coiffureh</center><br>
+                        <center>BIENVENU</center><br>
 
                     </div>
                 </div>
@@ -46,112 +46,28 @@
          </div>
             </h3>
         </div><br><br>
-        <div class="container bg-dark text-white rounded-pill">
+        <div class="container bg-dark text-white ">
             <h1>
-                <center><strong>Voici la liste des coiffueh disponiblesa dans les differentes region</strong> </center>
+                <center><strong>Voici la liste des ouvriers de méme dans les regions differentes </strong> </center>
             </h1>
-        </div>
-            <div class="container bg-white">
-                <div class="row">
+        <div class="container bg-white ">
+                <div class="row"> 
+                  @foreach ($ouvriers as $ouvriers)
                 <div class="col-sm-4 my-4">
                     <div class="card">
                     <div class="card-body">
-                    <img src="{{asset('/image/cofe1.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
-                        <h5 class="card-title">Information</h5>
-                        <p class="card-text">Region De Dakar.</p>
-                        <a href="/coifprofil" class="btn btn-primary">OUMOU CISSE</a>
+                      <img src="{{asset('ouvrierprofil/'. $ouvriers->img)}}"  class="card-img-top" height="200px" alt="">
+                        <p class="card-text">{{ $ouvriers->prenom }}</p>    
+                        <p class="card-text">{{ $ouvriers->nom }}</p>
+                        <p class="card-text">{{ $ouvriers->adresse }}</p> 
+                        <p class="card-text">{{ $ouvriers->telephone }}</p>
+                        <h3 class="card-title my-4"><a href="/ouvriers/{{ $ouvriers->id }}" class="btn btn-primary">{{ $ouvriers->nommetier  }}</h3></a>        
                     </div>
                     </div>
-                </div>
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/cofe2.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
-                        <h5 class="card-title">Information</h5>
-                        <p class="card-text">Region De Thies</p>
-                        <a href="/coifprofil" class="btn btn-primary">MOUHAMETH KANE</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/cofe3.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
-                    <h5 class="card-title">Information</h5>
-                        <p class="card-text">Region De Louga</p>
-                        <a href="/coifprofil" class="btn btn-primary">MASSEYE GNING</a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-    <!-- ***********************************************************************************      -->
-    <div class="container bg-white">
-                <div class="row">
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/cofe4.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
-                    <h5 class="card-title">Information</h5>
-                        <p class="card-text">Region De Saint Louis</p>
-                        <a href="/coifprofil" class="btn btn-primary">SOKHNA NDOUR</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/cofe5.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
-                    <h5 class="card-title">Information</h5>
-                        <p class="card-text">Region De Diourbel</p>
-                        <a href="/coifprofil" class="btn btn-primary">AWA NDIAYE</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/cofe6.png')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
-                    <h5 class="card-title">Information</h5>
-                        <p class="card-text">Region De Fatick</p>
-                        <a href="/coifprofil" class="btn btn-primary">SERIGNE SALIOU FALL</a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-<!-- ***********************************************************************************      -->
-<div class="container bg-white">
-                <div class="row">
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/cofe7.png')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
-                    <h5 class="card-title">Information</h5>
-                        <p class="card-text">Region De Tambacounda</p>
-                        <a href="/coifprofil" class="btn btn-primary">PAPA ABDOU BITEY</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/cofe8.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
-                    <h5 class="card-title">Information</h5>
-                        <p class="card-text">Region De Ziguinchor</p>
-                        <a href="/coifprofil" class="btn btn-primary">MALANG MANE</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 my-4">
-                    <div class="card">
-                    <div class="card-body">
-                    <img src="{{asset('/image/cofe9.jpg')}}" class="rounded bg-dark" width="370" height="200"alt="mass"><br><br>
-                    <h5 class="card-title">Information</h5>
-                        <p class="card-text">Region De Sedhiou</p>
-                        <a href="/coifprofil" class="btn btn-primary">IBRAHIMA MBAYE</a>
-                    </div>
-                    </div>
-                </div>
-                </div>                
+                </div> 
+                @endforeach 
+             </div> 
+            </div>
     
 @endsection 
   

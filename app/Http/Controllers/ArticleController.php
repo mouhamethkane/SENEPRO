@@ -165,14 +165,7 @@ class ArticleController extends Controller
         return redirect('/consulte')->with('status', 'Votre article à été bien supprimé.');
     }
 
-    public function lismembre($id){
-        $ouvriersWithRoleId = Metier::whereHas('ouvriers', function ($query) use ($id){
-            $query->where('id', $id);
-        })->get();
-
-        // dd($ouvriersWithRoleId);
-        return $id;
-    }
+  
 
 }
    

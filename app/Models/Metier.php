@@ -10,10 +10,10 @@ class Metier extends Model
 {
     use HasFactory;
     protected $fillable =[
-        'nom', 'domaine','image'
+        'nommetier', 'domaine','image'
     ];
     public function ouvriers(){
-        return $this->belongsToMany(ouvrier::class);
+        return $this->hasMany(ouvrier::class);
     }
     
 }
