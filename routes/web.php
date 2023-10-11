@@ -30,7 +30,7 @@ Route::get("/update/{id}",[ouvrierController::class,"update"])->name('crud.updat
 Route::post("/edit",[ouvrierController::class,"edit"])->name('crud.edit');
 Route::get("/crud.delete/{id}",[ouvrierController::class,"delete"])->name('crud.delete');
 Route::get('/mertiermembre/{id}', [ouvrierController::class, 'lismembre'])->name('mertiermembre');
-Route::get('/mertierouvrier/{id}', [ouvrierController::class, 'lisouvrier'])->name('mertierouvrier');
+Route::get('/show/{id}', [ouvrierController::class, 'lisouvrier'])->name('show');
 
 Route::get('/contact', function () {
     return view('contact');
@@ -39,6 +39,8 @@ Route::get('/contact', function () {
 Route::get('/article', function () {
     return view('article');
 })->name('index');
+
+
 
 Route::get('/accueil', function () {
     return view('ouvriers.accueil');
@@ -60,8 +62,7 @@ Route::post('/inscription', function(){
 });
 
 
-Route::get('/connexion', 'ConnexionController@formulaire');
-Route::post('/connexion', 'ConnexionController@formulaire');
+
 
 
 
@@ -74,6 +75,7 @@ Route::get('/consulte', [ArticleController::class, 'consulte'])->name('consulte'
 Route::post('/article', [ArticleController::class, 'store'])->name('article.store');
 Route::get('/edit/{id}', [ArticleController::class, 'edit'])->name('edit');
 Route::post('/update/{id}', [ArticleController::class, 'update'])->name('update');
+
 
 
 Route::get('/delete/{id}', [ArticleController::class, 'delete'])->name('delete');
@@ -107,4 +109,7 @@ Route::controller(MetierController::class)->group(function () {
     });
 
 
-Route::get('/coiffeur/{id}', [MetierController::class, 'coiffeur'])->name('coiffeur');    
+Route::get('/coiffeur/{id}', [MetierController::class, 'coiffeur'])->name('coiffeur');
+Route::get('/coifprofil/{id}', [MetierController::class, 'coifprofil'])->name('coifprofil');  
+
+Route::get('/metier/{id}', [MetierController::class, 'show'])->name('show');

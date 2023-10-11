@@ -192,14 +192,13 @@ return back()->with('success','ouvrier modifie avec succes');
                 return view('ouvriers.coiffureh', compact('ouvriers'));        
     }
 
-    public function lisouvrier($id)
+    public function show($id)
     {
         $ouvriers = DB::table('ouvriers')
                 ->join('metiers', 'metiers.id', '=', 'ouvriers.metiers_id')
                 ->where('metiers_id', '=', $id)
                 ->get();
-               // dd($ouvriers);
-                return view('ouvriers.coifprofil', compact('ouvriers'));        
+                return view('ouvriers.show', compact('ouvriers'));         
     }
 
 }

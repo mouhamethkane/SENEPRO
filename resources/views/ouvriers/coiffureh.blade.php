@@ -48,8 +48,9 @@
         </div><br><br>
         <div class="container bg-dark text-white ">
             <h1>
-                <center><strong>Voici la liste des ouvriers de méme dans les regions differentes </strong> </center>
+                <center><strong>Voici la liste des ouvriers de méme metier dans les regions differentes </strong> </center>
             </h1>
+        <!-- Recuperation des ouvriers de meme metier  -->    
         <div class="container bg-white ">
                 <div class="row"> 
                   @foreach ($ouvriers as $ouvriers)
@@ -61,7 +62,7 @@
                         <p class="card-text">{{ $ouvriers->nom }}</p>
                         <p class="card-text">{{ $ouvriers->adresse }}</p> 
                         <p class="card-text">{{ $ouvriers->telephone }}</p>
-                        <h3 class="card-title my-4"><a href="/ouvriers/{{ $ouvriers->id }}" class="btn btn-primary">{{ $ouvriers->nommetier  }}</h3></a>        
+                        <h2 class="card-title my-4"><a href="/ouvriers/{{ $ouvriers->id }}" class="btn btn-primary"><strong>{{ $ouvriers->nommetier  }}</strong></h2></a>        
                     </div>
                     </div>
                 </div> 

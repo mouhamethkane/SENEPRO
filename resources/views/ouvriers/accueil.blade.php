@@ -34,7 +34,7 @@
          
     </div> 
   <!-- **************************************************************************************            -->
-
+        <!-- Recuperation des informations des metiers ouvrier -->
               @foreach ($metier as $metier)
               <div class="col" id="image">
                 <div class="card md-15"> 
@@ -50,6 +50,7 @@
             
      
         <!-- ********************************************************************************   -->
+        <!-- Recuperation des informations des articles -->
         <div class="container bg-dark text-white rounded-pill my-4">
             <h1>
                 <center><strong>Voici la liste des articles</strong> </center>
