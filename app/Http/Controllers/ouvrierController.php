@@ -192,14 +192,22 @@ return back()->with('success','ouvrier modifie avec succes');
                 return view('ouvriers.coiffureh', compact('ouvriers'));        
     }
 
+    // public function show($id)
+    // {
+    //     $ouvriers = DB::table('ouvriers')
+    //             ->join('metiers', 'metiers.id', '=', 'ouvriers.metiers_id')
+    //             ->where('metiers_id', '=', $id)
+    //             ->get();
+    //             return view('ouvriers.show', compact('ouvriers'));         
+    // }
+
     public function show($id)
-    {
-        $ouvriers = DB::table('ouvriers')
-                ->join('metiers', 'metiers.id', '=', 'ouvriers.metiers_id')
-                ->where('metiers_id', '=', $id)
-                ->get();
-                return view('ouvriers.show', compact('ouvriers'));         
-    }
+{
+    $ouvrier = ouvrier::find($id);
+
+    return view('ouvriers.show', compact('ouvrier'));
+}
+
 
 }
 

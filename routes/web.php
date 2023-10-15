@@ -1,12 +1,13 @@
 <?php
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
+use App\Http\Controllers\MetierController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CommentController;
-use App\Http\Controllers\MailController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\MetierController;
 use App\Http\Controllers\ouvrierController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +31,8 @@ Route::get("/update/{id}",[ouvrierController::class,"update"])->name('crud.updat
 Route::post("/edit",[ouvrierController::class,"edit"])->name('crud.edit');
 Route::get("/crud.delete/{id}",[ouvrierController::class,"delete"])->name('crud.delete');
 Route::get('/mertiermembre/{id}', [ouvrierController::class, 'lismembre'])->name('mertiermembre');
-Route::get('/show/{id}', [ouvrierController::class, 'lisouvrier'])->name('show');
+// Route::get('/show/{id}', [ouvrierController::class, 'lisouvrier'])->name('show');
+Route::get('/ouvriers/{id}', [ouvrierController::class, "show"]);
 
 Route::get('/contact', function () {
     return view('contact');
