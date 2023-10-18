@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\metier;
+use App\Models\Metier;
+use App\Models\ouvrier;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -22,7 +23,7 @@ class MetierController extends Controller
      */
     public function create()
     {
-        
+
         return view('metiers.create');
     }
 
@@ -32,12 +33,12 @@ class MetierController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-        
+
             'nom' => 'required',
             'domaine' => 'required',
            'image'=>'required'
         ]);
-        $metiers = new metier();
+        $metiers = new Metier();
         $metiers->nommetier = $request->nom;
         $metiers->domaine = $request->domaine;
         $image = $request->file('image');
@@ -46,11 +47,11 @@ class MetierController extends Controller
             $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
             $image->move($destinationPath, $profileImage);
             $metiers->image = $profileImage;
-        
+
 
 
         $metiers->save();
-        return redirect('/')->with('success', 'metier Ajouté avec succès');
+        return redirect('/metiers.index')->with('success', 'metier Ajouté avec succès');
     }
 
     /**
@@ -66,10 +67,10 @@ class MetierController extends Controller
      */
     public function edit( $id)
     {
-        
 
-            $metiers = metier::findOrFail($id);
-    
+
+            $metiers = Metier::findOrFail($id);
+
             return view('metiers.edit', compact('metiers'));
     }
 
@@ -79,16 +80,16 @@ class MetierController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-        
-            'nommetier' => 'required',
+
+            'nom' => 'required',
             'domaine' => 'required',
            'image'=>'required'
         ]);
-        $metiers = metier::findOrFail($id);
+        $metiers = Metier::findOrFail($id);
         $metiers->nommetier = $request->nom;
         $metiers->domaine = $request->domaine;
         $image = $request->file('image');
-           
+
         if ($request->hasFile('image')==null) {
             $metiers->image = $metiers->image;
         }
@@ -101,7 +102,7 @@ class MetierController extends Controller
 
 
         $metiers->save();
-        return redirect('/')->with('success', 'metier modifier avec succès');
+        return redirect('/metiers.index')->with('success', 'metier modifier avec succès');
     }
 
     /**
@@ -109,10 +110,10 @@ class MetierController extends Controller
      */
     public function destroy($id)
     {
-        $metiers = metier::findOrFail($id);
+        $metiers = Metier::findOrFail($id);
         $metiers->delete();
 
-        return redirect('/')->with('success', 'metier Supprime avec succès');
+        return redirect('/metiers.index')->with('success', 'metier Supprime avec succès');
     }
 
     public function coiffeur($id)

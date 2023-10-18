@@ -31,21 +31,21 @@
                         <td>{{ $ouvrier->telephone }}</td>
                         <td><img src="/ouvrierprofil/{{ $ouvrier->img }}" width="64" height="64"></td>
                         <td style="display: flex">
-          
-                            <a class="btn btn-warning btn-sm" style="margin-right: 5px" 
+                            <a href="{{ route('realisation.listrealisation', $ouvrier->id) }}" class="btn btn-sm btn-info" style="margin-right: 5px">les realisation</a>
+                            <a class="btn btn-warning btn-sm" style="margin-right: 5px"
                             type="submit" class="btn btn-sm btn-danger"
                             href="{{ route('crud.update', $ouvrier->id) }}">
-                            
+
                                 Modifier
                             </a>
-                           
-                              
+
+
                                 <a
                                      class="btn btn-sm btn-danger"
                                     href="{{ route('crud.delete', $ouvrier->id) }}">
                                     Supprimer
                                  </a>
-                         
+
                         </td>
                     </tr>
                 @endforeach

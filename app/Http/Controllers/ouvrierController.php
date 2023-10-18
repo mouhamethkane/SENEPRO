@@ -22,7 +22,7 @@ class ouvrierController extends Controller
     public function index()
     {
         $metier=Metier::all();
-        return view('layouts.crud.ajouter', compact('metier'));
+        return view('layouts.Crud.ajouter', compact('metier'));
     }
 
 
@@ -46,25 +46,25 @@ class ouvrierController extends Controller
         $ouvrier->adresse = $request->adresse;
         $ouvrier->telephone = $request->Telephone;
         $ouvrier->metiers_id = $request->metier;
-       
+
         $image = $request->file('img');
        // dd($image);
             $destinationPath = 'ouvrierprofil/';
             $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
             $image->move($destinationPath, $profileImage);
             $ouvrier->img = $profileImage;
-        
+
         $ouvrier->save();
 
         //dd($ouvrier);
-       
 
-        
-        return redirect('/');
 
-   
-          
-          
+
+        return redirect('/listouvrier');
+
+
+
+
     }
 
 
@@ -82,11 +82,11 @@ class ouvrierController extends Controller
         return view('layouts.Crud.index', compact('listouvrier'));
 
 
-         
+
     }
 
-   
-        
+
+
 
 
     /**
@@ -99,10 +99,10 @@ class ouvrierController extends Controller
     public function delete($id)
     {
         $ouvrier = ouvrier::find($id);
-       
+
         $ouvrier->delete();
 
-        return redirect('/')->with('success', 'ouvrier supprimer avec succes');
+        return redirect('/listouvrier')->with('success', 'ouvrier supprimer avec succes');
 
     }
 
@@ -113,27 +113,27 @@ class ouvrierController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    
+
         public function edit(Request $request)
         {
             $ouvrier=ouvrier::find($request->id);
 
-           
-            
+
+
             $validat =  $request->validate([
-                'prenom' => 'required',                                                                                 
+                'prenom' => 'required',
                 'nom' => 'required',
                 'telephone' => 'required',
-               
+
             ]);
-            
+
             $ouvrier->nom = $request->nom;
             $ouvrier->prenom = $request->prenom;
             $ouvrier->adresse = $request->adresse;
             $ouvrier->telephone = $request->telephone;
             $image = $request->file('img');
             //dd($request->file("img"));
-           
+
 
             if ($request->hasFile('img')==null) {
                 $ouvrier->img = $ouvrier->img;
@@ -144,13 +144,13 @@ class ouvrierController extends Controller
                 $image->move($destinationPath, $profileImage);
                 $ouvrier->img = $profileImage;
             }
-        
+
                 $ouvrier->save();
-                
-            
-return back()->with('success','ouvrier modifie avec succes');
-        }  
-    
+
+
+          return redirect('/listouvrier')->with('success','ouvrier modifie avec succes');
+        }
+
 
 
     /**
@@ -165,7 +165,7 @@ return back()->with('success','ouvrier modifie avec succes');
     {
        $ouvrier=ouvrier::find($id);
       return view("layouts.Crud.modifier", compact("ouvrier"));
-        
+
     }
 
 
@@ -181,7 +181,7 @@ return back()->with('success','ouvrier modifie avec succes');
         //$ouvrier->delete();
         return back()->with('success', 'ouvrier supprimé !');
     }
-    
+
     public function lismembre($id)
     {
         $ouvriers = DB::table('ouvriers')
@@ -189,7 +189,7 @@ return back()->with('success','ouvrier modifie avec succes');
                 ->where('metiers_id', '=', $id)
                 ->get();
                // dd($ouvriers);
-                return view('ouvriers.coiffureh', compact('ouvriers'));        
+                return view('ouvriers.coiffureh', compact('ouvriers'));
     }
 
     // public function show($id)
@@ -198,7 +198,7 @@ return back()->with('success','ouvrier modifie avec succes');
     //             ->join('metiers', 'metiers.id', '=', 'ouvriers.metiers_id')
     //             ->where('metiers_id', '=', $id)
     //             ->get();
-    //             return view('ouvriers.show', compact('ouvriers'));         
+    //             return view('ouvriers.show', compact('ouvriers'));
     // }
 
     public function show($id)

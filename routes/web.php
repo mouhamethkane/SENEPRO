@@ -8,6 +8,7 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ouvrierController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\OuvierRealisationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,7 +61,7 @@ Route::post('/inscription', function(){
 
     $utilisateur->save();
     return 'Nous avons recus votre email qui est '. request('email');
-   
+
 });
 
 
@@ -112,6 +113,11 @@ Route::controller(MetierController::class)->group(function () {
 
 
 Route::get('/coiffeur/{id}', [MetierController::class, 'coiffeur'])->name('coiffeur');
-Route::get('/coifprofil/{id}', [MetierController::class, 'coifprofil'])->name('coifprofil');  
+Route::get('/coifprofil/{id}', [MetierController::class, 'coifprofil'])->name('coifprofil');
 
 Route::get('/metier/{id}', [MetierController::class, 'show'])->name('show');
+
+
+// *********************Réalisation des Ouvriers ********************************************
+Route::get('/realisation/{id}', [OuvierRealisationController::class, 'listrealisation'])->name('realisation.listrealisation');
+Route::get('/create/{id}', [OuvierRealisationController::class, 'create'])->name('realisation.create');
